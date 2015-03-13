@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css3动画 */
+.m_ad_top,
+.m_ad_top .btn_close,
+.header .logo .img,
+.header .search .txt,
+.header .search .btn_search,
+.nav_main ul li,
+.issue dl dd a,
+.safeguard ul li a{
+	-webkit-transition:all .4s ease-out;
+	-moz-transition:all .4s ease-out;
+	-ms-transition:all .4s ease-out;
+	-o-transition:all .4s ease-out;
+	transition:all .4s ease-out;
+}
