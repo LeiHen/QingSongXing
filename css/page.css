@@ -1,16 +1,36 @@
 @charset "utf-8";
 
 
+/* 服务点评 */
+.remark{ }
+.remark dl{ padding: 20px 0; }
+.remark .g_span_pct50 .m_FAQ{ height: 68px; }
+.remark .g_span_pct50:nth-child(2n) .m_FAQ{ margin: 0 0px 20px 20px; }
+.remark .m_FAQ_even{ margin: 0 0px 20px 20px; }
 
+/* 关于我们 */
+.about{
+	padding: 60px 0;
+	overflow: hidden;
+}
+.about .cover{
+	width: 50%;
+	float: left;
+}
+.about .info{
+	display: inline-block;
+	width: 50%;
+}
+.about .info .name{
+	padding: 0 0 20px 0;
+	font-size: 3em;
+	line-height: 1em;
+	text-align: center;
+}
 
-
-
-
-
-
-
-
-
+.about .info .m_edit{
+	padding:0 20px;
+}
 
 
 
@@ -26,7 +46,9 @@
 .header .search .btn_search,
 .nav_main ul li,
 .issue dl dd a,
-.safeguard ul li a{
+.safeguard ul li a,
+.m_FAQ,
+.u_page li a{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

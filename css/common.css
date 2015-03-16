@@ -65,24 +65,25 @@ a:link,a:visited,a:hover,a:active{
 }
 
 
+.span_1{
+	width:29.2%;
+	padding: 1.5%;
+}
+.span_2{
+	width: 63.8%;
+	padding: 1.5%;
+}
 
-/* 导航 */
-.nav_main{ position: absolute; bottom: 0; right: 0; }
-.nav_main ul{ height: 40px; background-color: #333947; }
-.nav_main ul li{ display: inline-block; height: 40px; }
-.nav_main ul li a{ display: block; padding: 0px 22px; font-size: 1.6em; line-height: 40px; color: #fff; }
-.nav_main ul li:first-child{ padding: 0 14px; position: relative; }
-.nav_main ul li:first-child .u_sign{ display: block; position: absolute; top: -10px; background: #f54200; color: #fff; }
-.nav_main ul li:hover,
-.nav_main ul .hover{ background-color: #5f9dcc; }
-.nav_main .right_color{ position: absolute; right: 0; top: 0; left: 100%; height: 40px; width: 1000%; background-color: #333947; }
 
 
 
 /*
 	布局
 */
-
+.g_span_pct50{
+	width: 50%;
+	float: left;
+}
 
 
 
@@ -94,9 +95,17 @@ a:link,a:visited,a:hover,a:active{
 	元件
 */
 
-/*  */
+/* 标记 */
 .u_sign{ position: relative; display: block; background: #f54200; padding: 3px 6px; font-size: 1.2em; line-height: 1em; background: #f54200; color: #fff; }
 .u_sign:after{ position: absolute; left: 50%; top: 100%; width:0px; height:0px; margin: 0 0 0 -5px; border-left:5px solid transparent; border-right:5px solid transparent; border-top:8.660254037844386px solid #f54200; font-size:0px; line-height:0px; content: ""; }
+
+/* 分页 */
+.u_page{ padding: 20px 0; }
+.u_page li{ display: inline-block; +display: inline; +zoom: 1; margin: 0 2px; }
+.u_page li a{ display: block; padding: 10px 14px; border:1px  solid #e5e5e5; color: #8b8a8a; font-size: 1.4em; line-height: 1em; }
+.u_page li a:hover,
+.u_page li .hover{ border:1px  solid #f54200; background: #f54200; color: #fff; }
+
 
 
 /* 
@@ -114,11 +123,73 @@ a:link,a:visited,a:hover,a:active{
 .e_sub_banner{ }
 .e_sub_banner .img{ display:block; width: 100%; }
 
-/*  */
+
+/* 服务评点 */
+.m_FAQ{ position: relative; display: inline-block; padding: 20px 20px 20px 50px; margin: 0 40px 20px 0; border: 1px solid #e5e5e5; color: #1f2227; }
+.m_FAQ .ico{ color: #fff; text-align: center; line-height: 20px; font-size: 1em; font-weight: normal; height: 20px; width: 20px; display: block; position: absolute; overflow: hidden; left: 20px; }
+.m_FAQ .Q_title{ margin: 0 0 10px 0; line-height: 20px; font-size: 1.4em; font-weight: bold; }
+.m_FAQ .Q_title .ico{ background: #f54200; }
+.m_FAQ .A_txt{ font-size: 1.4em; }
+.m_FAQ .A_txt .ico{ background: #333947; }
+.m_FAQ:hover{ border: 1px solid #f54200; }
+.m_FAQ_even{ margin: 0 0px 20px 20px; }
 
 
+/* 编辑框 */
+.m_edit{
+	font-size: 1.4em;
+	line-height: 1.8em;
+}
+.m_edit p{
+	padding: 4px 0;
+	text-indent: 2em;
+}
+.m_edit ul{
+	
+}
+.m_edit li{
+	
+}
+.m_edit img{
+	
+}
 
 
+/* ad top */
+.m_ad_top{ margin: 0 auto; position: relative; }
+.m_ad_top img{display: block; }
+.m_ad_top .btn_close{ position: absolute; top: 50%; right: 20px; margin:-15px 0 0 0; color: #fff; color: rgba(255,255,255,.8); font-size: 2em; line-height: 1em; }
+.m_ad_top .btn_close:hover{ color: rgba(255,255,255,1); }
+
+/* 列表 */
+.m_list{ }
+.m_list .col{ float: left; }
+.m_list .col:first-child{ margin-left: 0; }
+.m_list .span_1{ width:10%; padding: 1.5%; }
+.m_list .span_2{ width: 84%; padding: 1.5%; }
+
+.m_list .area{ margin: 0 0 20px 0; background-color: #333947; font-size: 0; }
+.m_list .area li{ display: inline-block; width: 50%; margin: 4px 0; font-size: 16px; line-height: 1.8em; text-align: center; }
+.m_list .area li:first-child,
+.m_list .area .title{ display: block; width: 100%; margin: 0 0 10px 0; background-color: #f54200; color: #fff; font-size:24px; line-height: 48px; text-align: center; }
+
+.m_list .info{}
+
+.m_list .area .list .link{ display: block; padding: 10px 0; color: #fff; }
+.m_list .area .list .link:hover,
+.m_list .area .list .hover{ background-color: #f54200; }
+
+
+/* 导航 */
+.nav_main{ position: absolute; bottom: 0; right: 0; }
+.nav_main ul{ height: 40px; background-color: #333947; }
+.nav_main ul li{ display: inline-block; height: 40px; }
+.nav_main ul li a{ display: block; padding: 0px 22px; font-size: 1.6em; line-height: 40px; color: #fff; }
+.nav_main ul li:first-child{ padding: 0 14px; position: relative; }
+.nav_main ul li:first-child .u_sign{ display: block; position: absolute; top: -10px; background: #f54200; color: #fff; }
+.nav_main ul li:hover,
+.nav_main ul .hover{ background-color: #5f9dcc; }
+.nav_main .right_color{ position: absolute; right: 0; top: 0; left: 100%; height: 40px; width: 1000%; background-color: #333947; }
 
 /* 保障 */
 .safeguard{ background: #5f9dcc; }
@@ -139,17 +210,6 @@ a:link,a:visited,a:hover,a:active{
 .issue dl dd .hover{ color: #fff; }
 
 
-/* ad top */
-.m_ad_top{ margin: 0 auto; position: relative; }
-.m_ad_top img{display: block; }
-.m_ad_top .btn_close{ position: absolute; top: 50%; right: 20px; margin:-15px 0 0 0; color: #fff; color: rgba(255,255,255,.8); font-size: 2em; line-height: 1em; }
-.m_ad_top .btn_close:hover{ color: rgba(255,255,255,1); }
-
-/*  */
-
-
-
-/*  */
 
 
 
@@ -167,7 +227,7 @@ a:link,a:visited,a:hover,a:active{
     	  蓝色 #3c3c3c #333947 #5f9dcc
     	  橙色 #f54200
 
-    	  灰色 #8b8a8a
+    	  灰色 #8b8a8a #e5e5e5
 
 	  字体颜色 
 
