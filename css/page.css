@@ -1,6 +1,29 @@
 @charset "utf-8";
 
 
+
+
+
+/* 路线大全 */
+.path{
+	
+}
+
+/* 美景欣赏 */
+.fineview{
+	
+}
+
+
+/* 游客风采 */
+.mien{
+
+}
+
+
+
+
+
 /* 服务点评 */
 .remark{ }
 .remark dl{ padding: 20px 0; }
@@ -9,32 +32,11 @@
 .remark .m_FAQ_even{ margin: 0 0px 20px 20px; }
 
 /* 关于我们 */
-.about{
-	padding: 60px 0;
-	overflow: hidden;
-}
-.about .cover{
-	width: 50%;
-	float: left;
-}
-.about .info{
-	display: inline-block;
-	width: 50%;
-}
-.about .info .name{
-	padding: 0 0 20px 0;
-	font-size: 3em;
-	line-height: 1em;
-	text-align: center;
-}
-
-.about .info .m_edit{
-	padding:0 20px;
-}
-
-
-
-
+.about{ padding: 60px 0; overflow: hidden; }
+.about .cover{ width: 50%; float: left; }
+.about .info{ display: inline-block; width: 50%; }
+.about .info .name{ padding: 0 0 20px 0; font-size: 3em; line-height: 1em; text-align: center; }
+.about .info .m_edit{ padding:0 20px; }
 
 
 
@@ -48,7 +50,12 @@
 .issue dl dd a,
 .safeguard ul li a,
 .m_FAQ,
-.u_page li a{
+.u_page li a,
+.m_list .area .list a,
+.m_list .info .itme .float_box,
+.m_list .info .itme .title,
+.m_list .info .itme .img,
+.e_list_img .info .itme .wire{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
