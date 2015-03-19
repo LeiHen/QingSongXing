@@ -1,5 +1,77 @@
 @charset "utf-8";
 
+/* index */
+.index{
+	
+}
+.index .span_2{
+	width: 60.3%;
+	padding:1.5% 0;
+	float: left;
+}
+.index .span_1{
+	width: 38.2%;
+	
+	padding:1.5% 0 1.5% 1.5%;
+	float: left;
+}
+
+.index .u_title .txt{
+	min-width: 100px;
+	padding:0 20px;
+}
+
+
+
+/* 推荐线路 */
+.recommend_path{
+
+}
+
+
+.recommend_path .cover{ position: relative; width: 30%; }
+.recommend_path .cover .img{ width: 100%; display:block; }
+.recommend_path .cover .box{ position: absolute; bottom: 20px; width: 60%; left: 0; right: 0; margin: auto; background: #fff; background: rgba(255,255,255,.7); text-align: center; font-size: 1.6em; padding: 10px; color: #333947; }
+.recommend_path .cover .box .title{ display: block; width: 100%; border-bottom: 1px solid #e5e5e5; text-align: center; font-size: 1.4em; line-height: 1.8em; }
+
+.recommend_path .path_hot{ width: 30%; margin: 0 1.4%; }
+.recommend_path .path_hot .itme{ width: 100%; margin:10px 0 0 0; }
+.recommend_path .path_hot .itme:first-child{ margin:0; }
+.recommend_path .path_hot .itme .title{ height: 25px; }
+
+.recommend_path .ranking{ width: 37.2%; }
+
+
+.index .ranking{ }
+.index .ranking .itme{ position: relative; display: block; width: 100%; padding: 13px 0 12px 0; overflow: hidden; border-bottom:1px solid #e5e5e5; }
+.index .ranking .itme:first-child{ border-top:1px solid #e5e5e5; }
+.index .ranking .itme .img{ display: block; width: 38.2%; margin: 0 61.8% 0 0; }
+.index .ranking .itme .col{ position: absolute; left: 0; top: 13px; height: 100%; margin: 0 0 0 38.2%; padding: 0 0 0 3%; font-size: 1.4em; line-height: 1em; color: #8b8a8a; }
+.index .ranking .itme .title{ font-size: 1em; line-height: 1.4em; }
+.index .ranking .itme .price{ position: absolute; bottom: 20px; right: 0; padding: 0 4px; color: #f54200; }
+
+.index .ranking .u_sign{ position: absolute; top:6px; left: 0%;}
+
+.index .ranking .itme:nth-child(1) .u_sign{ }
+.index .ranking .itme:nth-child(2) .u_sign{ }
+.index .ranking .itme:nth-child(3) .u_sign{ }
+/*.index .ranking .itme:nth-child(4) .u_sign{ background:#8b8a8a;  }*/
+
+.index .ranking .itme:hover{ }
+.index .ranking .itme:hover .col{ color: #333947; text-decoration: underline; }
+
+
+
+.index .ranking .itme{
+
+}
+
+
+
+/* 服务点评 */
+.index_remark{
+
+}
 
 
 
@@ -55,7 +127,9 @@
 .m_list .info .itme .float_box,
 .m_list .info .itme .title,
 .m_list .info .itme .img,
-.e_list_img .info .itme .wire{
+.e_list_img .info .itme .wire,
+.index .ranking .itme,
+.index .ranking .itme .col{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

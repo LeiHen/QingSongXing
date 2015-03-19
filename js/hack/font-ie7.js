@@ -30,6 +30,7 @@
 		'icon_logo': '&#xe603;',
 		'icon_logo_icon': '&#xe604;',
 		'icon_plentiful': '&#xe605;',
+		'icon_mapmarker': '&#xe612;',
 		'icon_atom': '&#xe606;',
 		'icon_thumbs_o_up': '&#xf087;',
 		'icon_thumbs_o_down': '&#xf088;',

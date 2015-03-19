@@ -28,7 +28,6 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .header .search:hover .txt{ /*border: 4px solid #3c3c3c; */ border: 4px solid #f54200; }
 .header .search:hover .btn_search{ /*background-color: #3c3c3c; */ background-color: #f54200; }
 
-
 .header .nav_main{ }
 
 
@@ -52,9 +51,6 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 
 
-
-
-
 /*
 	元件
 */
@@ -62,6 +58,10 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 /* 标记 */
 .u_sign{ position: relative; display: block; background: #f54200; padding: 3px 6px; font-size: 1.2em; line-height: 1em; background: #f54200; color: #fff; }
 .u_sign:after{ position: absolute; left: 50%; top: 100%; width:0px; height:0px; margin: 0 0 0 -5px; border-left:5px solid transparent; border-right:5px solid transparent; border-top:8.660254037844386px solid #f54200; font-size:0px; line-height:0px; content: ""; }
+
+.u_sign_gray{background: #8b8a8a;}
+.u_sign_gray:after{border-top-color:#8b8a8a;}
+
 
 /* 分页 */
 .u_page{ padding: 20px 0; }
@@ -135,7 +135,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .m_list .info .itme .img_wrap{ position: relative; overflow: hidden; }
 .m_list .info .itme .img{ display: block; width: 100%; max-width: 100%; min-width: 100%; }
 
-.m_list .info .itme .float_box{ position: absolute; bottom: -40px; height: 40px; width: 100%; background: #333947; background: rgba(245,66,0,.9); color: #fff; }
+.m_list .info .itme .float_box{ position: absolute; bottom: -40px; /*height: 40px;*/ width: 100%; background: #333947; background: rgba(245,66,0,.9); color: #fff; }
 .m_list .info .itme .price{ font-size: 2em; line-height: 40px; padding:0 20px; color: #fff; }
 .m_list .info .itme .satisfaction{ font-size: 1.2em; line-height: 40px; }
 .m_list .info .itme .title{ height: 50px; padding: 8px 14px; font-size: 1.4em; line-height: 1.8em; color: #8b8a8a; background: #ebebeb; color: #fff; color:#8b8a8a; }
@@ -173,6 +173,11 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .e_list_img .info .itme:hover .wire_left{ height: 100%; }
 .e_list_img .info .itme:hover .float_box{ background: #f54200; background:rgba(245,66,0,.9); }
 
+.e_list_txt{ }
+.e_list_txt .info .itme .float_box{ top:76%; background: #333947; background: rgba(51,57,71,.9);overflow: hidden; }
+.e_list_txt .info .itme .float_box .box_title{ font-size: 2em; line-height: 2em; padding: 10px 20px;  height: none;display:block; }
+.e_list_txt .info .itme:hover .float_box{ background: #f54200; background:rgba(245,66,0,.9); top: 0; }
+
 
 
 
@@ -189,7 +194,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 /* 保障 */
 .safeguard{ background: #5f9dcc; }
-.safeguard ul{ margin: 0 auto; }
+.safeguard ul{ margin: 0 auto;}
 .safeguard ul li{ float: left; width: 11.1111111%; }
 .safeguard ul li a{ display: block; padding: 10px 0; color: #fff; text-align: center; }
 .safeguard ul li a i{ font-size: 3em; line-height: 1.4em; }
@@ -198,7 +203,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 /* 常见问题 */
 .issue{ background: #333947; padding: 30px 0; }
-.issue dl{ display: inline-block; padding: 0 20px 0 0; width: 18%; }
+.issue dl{ display: inline-block; padding: 0 20px 0 1.5%; width: 16.5%; }
 .issue dl dt{ padding: 0 0 10px 0; color: #b1bfe5; font-size: 1.8em; }
 .issue dl dd{ }
 .issue dl dd a{ display: block; color: #fff; color: #828ca8; font-size: 1.4em; line-height: 1.6em; }
