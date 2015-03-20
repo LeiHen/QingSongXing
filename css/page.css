@@ -92,16 +92,45 @@
 
 }
 
+/* 咨询点评 */
+.consult_remark{
+
+}
+.consult_remark .cr_itme{
+
+}
+.consult_remark .cr_itme .cr_list_wrap{
+
+}
+.consult_remark .cr_itme .cr_list_wrap .m_FAQ:first-child{
+	margin: 0;
+}
+.consult_remark .cr_itme .from{
+	margin: 20px 0;
+}
+.consult_remark .cr_itme .m_message{
+	
+}
+
+
+.consult_remark .consult{
+
+}
+
+.consult_remark .remark{
+
+}
+
 
 
 
 
 /* 服务点评 */
-.remark{ }
+/*.remark{ }
 .remark dl{ padding: 20px 0; }
 .remark .g_span_pct50 .m_FAQ{ height: 68px; }
 .remark .g_span_pct50:nth-child(2n) .m_FAQ{ margin: 0 0px 20px 20px; }
-.remark .m_FAQ_even{ margin: 0 0px 20px 20px; }
+.remark .m_FAQ_even{ margin: 0 0px 20px 20px; }*/
 
 /* 关于我们 */
 .about{ padding: 60px 0; overflow: hidden; }
@@ -129,7 +158,9 @@
 .m_list .info .itme .img,
 .e_list_img .info .itme .wire,
 .index .ranking .itme,
-.index .ranking .itme .col{
+.index .ranking .itme .col,
+.u_title .btn_more,
+.u_btn{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

@@ -7,6 +7,8 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 
 .wrap{ width:90%; }
+.wrap60{ width:60%; margin: 0 auto }
+.wrap50{ width:60%; margin: 0 auto }
 
 .w{ width: 1200px; margin: auto; }
 .w_max{ max-width: 100%; margin: auto; }
@@ -37,17 +39,21 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .content{ }
 
 
-.span_1{ width:29.2%; padding: 1.5%; }
-.span_2{ width: 63.8%; padding: 1.5%; }
+.span_3_1{ width:29.2%; padding: 1.5%; }
+.span_3_2{ width: 63.8%; padding: 1.5%; }
 
-
+.col .span_2_1{ width: 48.5%; padding: 1.5%; float: left;}
+.col .span_2_1:first-child{ padding: 1.5% 1.5% 1.5% 0;}
+.col .span_2_1:last-child{ padding: 1.5% 0 1.5% 1.5%; }
+.col .span_2_1_cpr{ padding: 1.5% 0 1.5% 1.5%; }
+/*.span_2_1{ width: 63.8%; padding: 1.5%; }*/
 
 
 /*
 	布局
 */
 .g_span_pct50{ width: 50%; float: left; }
-
+.g_span_50{ width: 50%; float: left; }
 
 
 
@@ -71,8 +77,28 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .u_page li .hover{ border:1px  solid #f54200; background: #f54200; color: #fff; }
 
 /* 标题 */
-.u_title{ margin: 20px auto; background-color: #333947; font-size: 2.4em; line-height: 2em; color: #fff; }
-.u_title .txt{ /*width: 168px; */width:14%; background-color:#f54200; display: inline-block; +display: inline; +zoom: 1;text-align: center; }
+.u_title{ margin: 20px auto; background-color: #333947; font-size: 2.4em; line-height: 2em; color: #fff;position: relative;}
+.u_title .txt{ /*width: 168px; */width:14%;  min-width: 168px; background-color:#f54200; display: inline-block; +display: inline; +zoom: 1;text-align: center; }
+.u_title .btn_more{ position: absolute; right: 0px; padding: 0 20px; font-size: 0.6em; color: #fff; }
+.u_title .btn_more:hover{ background: #5f9dcc; color: #fff; }
+
+/* 按钮 */
+.u_btn{
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 1.8em;
+	line-height: 1em;
+	color: #fff;
+
+	background: #333947;
+	background: rgba(51,57,71,.9);
+}
+
+.u_btn:hover{
+	background: #f54200;
+	background: rgba(245,66,0,.9);
+}
+
 
 /* 
 	模块
@@ -90,8 +116,8 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .e_sub_banner .img{ display:block; width: 100%; }
 
 
-/* 服务评点 */
-.m_FAQ{ position: relative; display: inline-block; padding: 20px 20px 20px 50px; margin: 0 40px 20px 0; border: 1px solid #e5e5e5; color: #1f2227; }
+/* 咨询评点 */
+.m_FAQ{ position: relative; display: inline-block; padding: 20px 20px 20px 50px; margin: 20px 0 0 0; border: 1px solid #e5e5e5; color: #1f2227; }
 .m_FAQ .ico{ color: #fff; text-align: center; line-height: 20px; font-size: 1em; font-weight: normal; height: 20px; width: 20px; display: block; position: absolute; overflow: hidden; left: 20px; }
 .m_FAQ .Q_title{ margin: 0 0 10px 0; line-height: 20px; font-size: 1.4em; font-weight: bold; }
 .m_FAQ .Q_title .ico{ background: #f54200; }
@@ -113,7 +139,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .m_ad_top{ margin: 0 auto; position: relative; }
 .m_ad_top img{ display: block; }
 .m_ad_top .btn_close{ position: absolute; top: 50%; right: 20px; margin:-15px 0 0 0; color: #fff; color: rgba(255,255,255,.8); font-size: 2em; line-height: 1em; }
-.m_ad_top .btn_close:hover{ color: rgba(255,255,255,1); }
+.m_ad_top .btn_close:hover{color:#fff; color: rgba(255,255,255,1); }
 
 /* 列表 */
 .m_list{ }
@@ -177,6 +203,12 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .e_list_txt .info .itme .float_box{ top:76%; background: #333947; background: rgba(51,57,71,.9);overflow: hidden; }
 .e_list_txt .info .itme .float_box .box_title{ font-size: 2em; line-height: 2em; padding: 10px 20px;  height: none;display:block; }
 .e_list_txt .info .itme:hover .float_box{ background: #f54200; background:rgba(245,66,0,.9); top: 0; }
+
+
+/* 留言表单 */
+.m_message{
+	display: none;
+}
 
 
 

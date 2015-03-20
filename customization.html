@@ -67,7 +67,7 @@
                             <li><a href="fineView.html">美景欣赏</a></li>
 
                             <li class="hover"><a href="mien.html">游客风采</a></li>
-                            <li><a href="remark.html">服务评点</a></li>
+                            <li><a href="consultRemark.html">咨询评点</a></li>
 
                             <li><a href="strategy.html">出游贴士</a></li>
                             <li><a href="about.html">关于我们</a></li>
@@ -90,8 +90,147 @@
         <!-- banner ]] -->
         
         <!-- content [[ -->
-        <div class="content w clearFix ">
+        <div class="content w clearFix customization">
             <h1 class="u_title"><span class="txt">包团定制</span></h1>
+            <div class="wrap60">            
+                <ul class="step">
+                    <li class="list">1.出游信息</li>
+                    <li class="list">2.联系方式</li>
+<!--                    <li class="list">3.信息提交</li>-->
+                </ul>
+                
+                <ul class="info">
+                    <li class="list">
+                        <dl>
+                            <dd>
+                                <span class="title">出发地点：</span>
+                                <select name=""> 
+                                    <option value="选择省份">省份</option> 
+                                    <option value="广东">广东</option> 
+                                    <option value="北京">北京</option> 
+                                    <option value="上海">上海</option> 
+                                </select>
+                                <select name=""> 
+                                    <option value="选择省份">城市</option> 
+                                    <option value="广州">广州</option> 
+                                    <option value="北京">潮州</option>
+                                    <option value="茂名">茂名</option>
+                                    <option value="汕头">汕头</option> 
+                                    <option value="珠海">珠海</option>
+                                    
+                                </select>
+                                <select name=""> 
+                                    <option value="选择省份">县区</option> 
+                                    <option value="广东">湘桥</option> 
+                                    <option value="北京">潮安</option> 
+                                    <option value="上海">饶平</option> 
+                                </select>
+                                
+                            </dd>
+                            <dd>
+                                <span class="title">目的地点：</span>
+                                <select name=""> 
+                                    <option value="选择省份">省份</option> 
+                                    <option value="广东">广东</option> 
+                                    <option value="北京">北京</option> 
+                                    <option value="上海">上海</option> 
+                                </select>
+                                <select name=""> 
+                                    <option value="选择省份">城市</option> 
+                                    <option value="广州">广州</option> 
+                                    <option value="北京">潮州</option>
+                                    <option value="茂名">茂名</option>
+                                    <option value="汕头">汕头</option> 
+                                    <option value="珠海">珠海</option>
+                                    
+                                </select>
+                                <select name=""> 
+                                    <option value="选择省份">县区</option> 
+                                    <option value="广东">湘桥</option> 
+                                    <option value="北京">潮安</option> 
+                                    <option value="上海">饶平</option> 
+                                </select>
+                                
+                            </dd>
+                            <dd>
+                                <span class="title">出发时间：</span>
+                                <input type="date">-<input type="date">
+                            </dd>
+                            <dd>
+                                <span class="title">计划人数：</span>
+                                <input type="number" min="0" step="1">-<input type="number" min="1" step="1">
+                            </dd>
+                            <dd>
+                                <span class="title">每人预算：</span>
+                                <input type="number" min="1" step="1">-<input type="number" min="1" step="1">
+                            </dd>
+                            <dd>
+                                <span class="title">住宿要求：</span>
+                                <label><input type="checkbox" name="putup" value="经济型">经济型</label>
+                                <label><input type="checkbox" name="putup" value="三星级">三星级</label>
+                                <label><input type="checkbox" name="putup" value="四星级">四星级</label>
+                                <label><input type="checkbox" name="putup" value="五星级">五星级</label>
+                                <label><input type="checkbox" name="putup" value="指定酒店">指定酒店</label>
+                                <label><input type="checkbox" name="putup" value="免定安排">免定安排</label>
+                            </dd>
+                            <dd>
+                                <span class="title">交通情况：</span>
+                                <label><input type="checkbox" name="traffic" value="飞机">飞机</label>
+                                <label><input type="checkbox" name="traffic" value="高铁">高铁</label>
+                                <label><input type="checkbox" name="traffic" value="火车">火车</label>
+                                <label><input type="checkbox" name="traffic" value="汽车">汽车</label>
+                                <label><input type="checkbox" name="traffic" value="自行车">自行车</label>
+                                <label><input type="checkbox" name="traffic" value="徒步">徒步</label>
+                                <label><input type="checkbox" name="traffic" value="自驾游">自驾游</label>
+                            </dd>
+                            <dd>
+                                <span class="title">其他需求：</span>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="list">
+                        <dl>
+                            <dd>
+                                <span class="title">公司名称：</span>
+                                <input type="text">
+                            </dd>
+                            <dd>
+                                <span class="title">联系人：</span>
+                                <input type="text">
+                            </dd>
+                            <dd>
+                                <span class="title">手机号码：</span>
+                                <input type="tel">
+                            </dd>
+                            <dd>
+                                <span class="title">固定电话：</span>
+                                <input type="tel">
+                            </dd>
+                            <dd>
+                                <span class="title">电子邮箱：</span>
+                                <input type="email">
+                            </dd>
+                        </dl>
+                    </li>
+                    
+                    <li class="step_btn">
+                        <div class="verify">
+                            <span class="title">验证码：</span>
+                            <input type="text">
+                            <img src="" alt="" class="img">
+                        </div>
+
+                        <a href="" class="btn"></a>
+                    </li>
+                </ul>
+                
+                <div>
+                    
+                </div>
+                
+                
+            </div>
         </div>
         <!-- content ]] -->
      
