@@ -112,6 +112,17 @@
 	
 }
 
+.consult_remark .cr_itme .btn_box{
+	text-align: center;
+}
+
+.consult_remark .cr_itme .btn_box .u_btn{
+	font-size: 3em;
+	line-height: 1em;
+	padding: 20px 60px;
+	margin: 20px auto;
+}
+
 
 .consult_remark .consult{
 
@@ -160,7 +171,8 @@
 .index .ranking .itme,
 .index .ranking .itme .col,
 .u_title .btn_more,
-.u_btn{
+.u_btn,
+.m_message .item .input{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

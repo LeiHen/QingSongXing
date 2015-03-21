@@ -207,10 +207,60 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 /* 留言表单 */
 .m_message{
-	display: none;
+	
+}
+.m_message .item{
+	position: relative;
+	padding: 0 0 0 120px;
+	margin: 20px 0;
+}
+.m_message .item .title{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	/*height: 3em;*/
+	padding: 0 20px 0 0;
+	text-align: right;
+	font-size: 2em;
+	line-height: 2em;
+}
+.m_message .item .ingput_wrap{
+	padding: 10px;
+}
+.m_message .item .input{
+	display: block;
+	width: 96%;
+	padding: 0.5em 2%;
+	border: none;
+	background: none;
+	border:1px solid #e5e5e5;
+	font-size: 2em;
+	line-height: 1em;
+	color: #333947;
+	outline
+}
+
+.m_message .item {
+	position: relative;
+	padding: 0 0 0 120px;
+	margin: 20px 0;
+}
+.m_message .item .input{
+	
 }
 
 
+
+
+.m_message .item .input:hover{
+	border:1px solid #f54200;
+	/*outline:1px solid #f54200;*/
+}
+.m_message .item .input:focus{
+	border:1px solid #f54200;
+	outline:1px solid #f54200;
+}
 
 
 /* 导航 */
