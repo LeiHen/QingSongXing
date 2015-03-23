@@ -1,44 +1,15 @@
 @charset "utf-8";
 
 /* index */
-.index{
-	
-}
-.index .span_2{
-	width: 60.3%;
-	padding:1.5% 0;
-	float: left;
-}
-.index .span_1{
-	width: 38.2%;
-	
-	padding:1.5% 0 1.5% 1.5%;
-	float: left;
-}
+.index{ }
+.index .span_2{ width: 60.3%; padding:1.5% 0; float: left; }
+.index .span_1{ width: 38.2%; padding:1.5% 0 1.5% 1.5%; float: left; }
 
-.index .u_title .txt{
-	min-width: 100px;
-	padding:0 20px;
-}
-.index .index_remark .satisfaction{
-	font-size: 2em;
-	line-height: 1em;
-	padding: 4px 0 20px 0;
-	color: #333947;
-	vertical-align: top;
-}
-.index .index_remark .satisfaction .ico{
-	color: #f54200;
-	padding:0 4px 0 0;
-	font-size: 1.2em;
-}
-.index .index_remark .m_FAQ{
-	padding-top:16px;
-	padding-bottom:16px;
-}
-.index .index_remark .m_FAQ:first-child{
-	margin-top: 0;
-}
+.index .u_title .txt{ min-width: 100px; padding:0 20px; }
+.index .index_remark .satisfaction{ font-size: 2em; line-height: 1em; padding: 4px 0 20px 0; color: #333947; vertical-align: top; }
+.index .index_remark .satisfaction .ico{ color: #f54200; padding:0 4px 0 0; font-size: 1.2em; }
+.index .index_remark .m_FAQ{ padding-top:16px; padding-bottom:16px; }
+.index .index_remark .m_FAQ:first-child{ margin-top: 0; }
 
 
 
@@ -47,8 +18,6 @@
 .recommend_path{
 
 }
-
-
 .recommend_path .cover{ position: relative; width: 30%; }
 .recommend_path .cover .img{ width: 100%; display:block; }
 .recommend_path .cover .box{ position: absolute; bottom: 20px; width: 60%; left: 0; right: 0; margin: auto; background: #fff; background: rgba(255,255,255,.7); text-align: center; font-size: 1.6em; padding: 10px; color: #333947; }
@@ -82,12 +51,6 @@
 
 
 
-.index .ranking .itme{
-
-}
-
-
-
 /* 服务点评 */
 .index_remark{
 
@@ -100,7 +63,10 @@
 }
 
 .customization .step{
-	
+	overflow: hidden;
+}
+.customization .step .list{
+	float: left;
 }
 
 
@@ -165,11 +131,11 @@
 
 
 /* 服务点评 */
-/*.remark{ }
-.remark dl{ padding: 20px 0; }
-.remark .g_span_pct50 .m_FAQ{ height: 68px; }
-.remark .g_span_pct50:nth-child(2n) .m_FAQ{ margin: 0 0px 20px 20px; }
-.remark .m_FAQ_even{ margin: 0 0px 20px 20px; }*/
+.span_2_FAQ{ }
+.span_2_FAQ dl{ padding: 20px 0; overflow: hidden;}
+.span_2_FAQ .g_span_pct50 .m_FAQ{ height: 68px; width: auto; margin: 0 20px 20px 0px;}
+.span_2_FAQ .g_span_pct50:nth-child(2n) .m_FAQ{ margin: 0 0px 20px 20px; }
+.span_2_FAQ .m_FAQ_even{ margin: 0 0px 20px 20px; }
 
 /* 关于我们 */
 .about{ padding: 60px 0; overflow: hidden; }

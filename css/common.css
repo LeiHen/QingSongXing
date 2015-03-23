@@ -227,7 +227,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 
 /* 留言表单 */
-.m_message{ position: relative; /*overflow: hidden;*/}
+.m_message{ position: relative;}
 .m_message .item{ position: relative; padding: 0 0 0 120px; margin: 20px 0; }
 .m_message .item .title{ position: absolute; left: 0; top: 0; width: 100px; padding: 0 20px 0 0; text-align: right; font-size: 2em; line-height: 40px; }
 .m_message .item .ingput_wrap{ padding: 10px; }
