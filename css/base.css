@@ -43,6 +43,8 @@ a:hover{text-decoration:none;cursor:pointer}
 .pa{position:absolute}
 .zoom{zoom:1}
 .hidden{visibility:hidden}
+.table{display:table;}
+.table_cell{display:table-cell;}
 .none{display:none}
 .ofh{overflow: hidden;}
 

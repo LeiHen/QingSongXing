@@ -20,6 +20,26 @@
 	min-width: 100px;
 	padding:0 20px;
 }
+.index .index_remark .satisfaction{
+	font-size: 2em;
+	line-height: 1em;
+	padding: 4px 0 20px 0;
+	color: #333947;
+	vertical-align: top;
+}
+.index .index_remark .satisfaction .ico{
+	color: #f54200;
+	padding:0 4px 0 0;
+	font-size: 1.2em;
+}
+.index .index_remark .m_FAQ{
+	padding-top:16px;
+	padding-bottom:16px;
+}
+.index .index_remark .m_FAQ:first-child{
+	margin-top: 0;
+}
+
 
 
 
@@ -74,6 +94,14 @@
 }
 
 
+/* 包团定制 */
+.customization{
+
+}
+
+.customization .step{
+	
+}
 
 
 /* 路线大全 */
@@ -172,7 +200,8 @@
 .index .ranking .itme .col,
 .u_title .btn_more,
 .u_btn,
-.m_message .item .input{
+.m_message .item .input,
+.m_message .item .grade{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
