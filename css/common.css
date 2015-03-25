@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*全局*/
-body{ font-family:Helvetica,Arial,"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",SimSun,"宋体",sans-serif; font-size:62.5%; }
+body{ font-family:Helvetica,Arial,"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",SimSun,"宋体",sans-serif; font-size:62.5%; color: #333947;}
 
 a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
@@ -13,6 +13,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .w{ width: 1200px; margin: auto; }
 .w_max{ max-width: 100%; margin: auto; }
 .w_min{ min-width: 1200px; margin: auto; }
+
 
 
 
@@ -39,8 +40,12 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .content{ }
 
 
-.span_3_1{ width:29.2%; padding: 1.5%; }
-.span_3_2{ width: 63.8%; padding: 1.5%; }
+
+.col .span_3_1{ width:32.2%; margin:0 0 0 1.5%; float: left;}
+.col .span_3_2{ width: 64.8%; margin:0 1.5% 0 0; float: left;}
+/*.col .span_3_1{ width:29.2%; padding: 1.5%; }
+.col .span_3_2{ width: 63.8%; padding: 1.5%; }*/
+
 
 .col .span_2_1{ width: 48.5%; padding: 1.5%; float: left;}
 .col .span_2_1:first-child{ padding: 1.5% 1.5% 1.5% 0;}
@@ -81,6 +86,10 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .u_title .txt{ /*width: 168px; */width:14%;  min-width: 168px; background-color:#f54200; display: inline-block; +display: inline; +zoom: 1;text-align: center; }
 .u_title .btn_more{ position: absolute; right: 0px; padding: 0 20px; font-size: 0.6em; color: #fff; }
 .u_title .btn_more:hover{ background: #5f9dcc; color: #fff; }
+
+.u_title .bgcolor_no{
+	background: none;
+}
 
 /* 按钮 */
 .u_btn{ display: inline-block; +display: inline; +zoom: 1; padding: 10px 20px; border: none; font-size: 1.8em; line-height: 1em; color: #fff; background: #333947; background: rgba(51,57,71,.9); cursor: pointer;}
@@ -124,7 +133,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 /* 咨询评点 */
 .m_FAQ{ position: relative; display: inline-block; padding: 20px 20px 20px 50px; margin: 20px 0 0 0; border: 1px solid #e5e5e5; color: #1f2227; }
-.m_FAQ .ico{ color: #fff; text-align: center; line-height: 20px; font-size: 1em; font-weight: normal; height: 20px; width: 20px; display: block; position: absolute; overflow: hidden; left: 20px; }
+.m_FAQ .ico{position: absolute;left:20px; display:block; height: 20px; width: 20px;  color: #fff; text-align: center; line-height: 20px; font-size: 1em; font-weight: normal;   overflow: hidden; }
 .m_FAQ .Q_title{ margin: 0 0 10px 0; line-height: 20px; font-size: 1.4em; font-weight: bold; }
 .m_FAQ .Q_title .ico{ background: #f54200; }
 .m_FAQ .A_txt{ font-size: 1.4em; }
@@ -211,9 +220,61 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .e_list_txt .info .itme:hover .float_box{ background: #f54200; background:rgba(245,66,0,.9); top: 0; }
 
 
+
+/* 列表 */
+.m_list_relate{
+
+}
+.m_list_relate .list{
+	cursor:pointer;
+	position: relative;
+}
+
+
+
+
+
+
+.m_list_relate .m_FAQ{
+	/*width: 99%;*/
+	min-width: 314px;
+	margin: 10px 0 0 0;
+}
+.m_list_relate .m_FAQ:first-child{
+	margin: 0;
+}
+.m_list_relate .m_FAQ .Q_title{
+	margin: 0;
+}
+
+
+
+/* 文章 */
+.m_article{
+
+}
+.m_article .title{
+	font-size: 2.4em;
+	line-height: 1.2em;
+	padding: 0 0 20px 0;
+}
+.m_article .time{
+	font-size: 1.4em;
+	line-height: 1em;
+	padding: 0 0 20px 0;  
+}
+.m_article .info{
+	margin: 40px auto;
+}
+
+
+
+
+
+
 /* 留言表单 */
 .m_message{ position: relative;}
-.m_message .item{ position: relative; padding: 0 0 0 120px; margin: 20px 0; }
+.m_message .item{ position: relative; padding: 0 0 0 120px; margin: 30px 0; }
 .m_message .item .title{ position: absolute; left: 0; top: 0; width: 100px; padding: 0 20px 0 0; text-align: right; font-size: 2em; line-height: 40px; }
 .m_message .item .ingput_wrap{ padding: 10px; }
 .m_message .item .input{ display: block; width: 95.2%; padding: 0.5em 2%; background: none; border:1px solid #e5e5e5; font-size: 2em; line-height: 1em; color: #333947; }
@@ -237,6 +298,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 .m_message .item .input.select_3{ width: 31%; margin: 0 0 0 3.5%; display: block; float: left; }
 .m_message .item .select_3:first-child{ margin: 0; }
+
 
 
 

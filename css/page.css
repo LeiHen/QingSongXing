@@ -6,7 +6,15 @@
 .index .span_1{ width: 38.2%; padding:1.5% 0 1.5% 1.5%; float: left; }
 
 .index .u_title .txt{ min-width: 100px; padding:0 20px; }
-.index .index_remark .satisfaction{ font-size: 2em; line-height: 1em; padding: 4px 0 20px 0; color: #333947; vertical-align: top; }
+.index .index_remark .satisfaction{
+	font-size: 2em;
+	line-height: 1em;
+	padding: 4px 0 11px 20px;
+	margin: 0 0 8px 0;
+	/*border: 1px solid #e5e5e5;*/
+	color: #333947;
+	vertical-align: top;
+}
 .index .index_remark .satisfaction .ico{ color: #f54200; padding:0 4px 0 0; font-size: 1.2em; }
 .index .index_remark .m_FAQ{ padding-top:16px; padding-bottom:16px; }
 .index .index_remark .m_FAQ:first-child{ margin-top: 0; }
@@ -58,104 +66,20 @@
 
 
 /* 包团定制 */
-.customization{
-
-}
-
-.customization .step{
-	overflow: hidden;
-	width: 100%;
-}
-.customization .step .list{
-	float: left;
-	width: 48%;
-	height: 60px;
-	padding:0 2% 0 0;
-	/*margin: 0 0 0 0px;*/
-	background: #e5e5e5;
-
-	font-size: 1.8em;
-	line-height: 60px;
-
-	text-align: center;
-	position: relative;
-	/*overflow: visible;*/
-
-}
-
-.customization .step .list:after{
-	content:"";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: -30px;
-	display: block;
-
-	width: 0;
-	height: 0;
-
-	margin: auto;
-	border-color:transparent transparent transparent #e5e5e5;
-	border-width:  30px 0 30px 30px;
-	border-style: solid;
-	
-	z-index: 2;
-}
-
-.customization .step .active{
-	background: #f54200;
-	color: #fff;
-}
-.customization .step .active:after{
-	border-color:transparent transparent transparent #f54200;
-}
-.customization .info .m_message .item{
-	overflow: hidden;
-}
-.customization .info .step_btn{
-	margin:80px 0;
-	overflow: hidden;
-	vertical-align: top;
-}
-
-.customization .info .step_btn .verify{
-	display: inline-block;
-	overflow: hidden;
-}
-.customization .info .step_btn .verify .title{
-	height: 46px;
-	font-size: 1.8em;
-	line-height: 46px;
-	display: block;
-	float: left;
-}
-.customization .info .step_btn .verify .input{
-	float: left;
-	display: block;
-	width: 80px;
-	padding-left: 8px;
-	padding-right: 8px;
-	margin: 0 10px;
-	letter-spacing:6px;
-	text-transform:uppercase;
-}
-.customization .info .step_btn .verify .img{
-	float: left;
-	display: block;
-	width: 80px;
-	height: 46px;
-}
-.customization .info .step_btn .btn{
-	vertical-align:top;
-	display: inline-block;
-	font-size: 2.6em;
-	padding-right: 40px;
-	padding-left:40px;
-	margin: 0 0px 0 10px; 
-}
-.customization .info .step_btn .none{
-	display: none;
-}
+.customization{ }
+.customization .step{ overflow: hidden; width: 100%; }
+.customization .step .list{ float: left; width: 48%; height: 60px; padding:0 2% 0 0; background: #e5e5e5; font-size: 1.8em; line-height: 60px; text-align: center; position: relative; }
+.customization .step .list:after{ content:""; position: absolute; top: 0; bottom: 0; right: -30px; display: block; width: 0; height: 0; margin: auto; border-color:transparent transparent transparent #e5e5e5; border-width:  30px 0 30px 30px; border-style: solid; z-index: 2; }
+.customization .step .active{ background: #f54200; color: #fff; }
+.customization .step .active:after{ border-color:transparent transparent transparent #f54200; }
+.customization .info .m_message .item{ overflow: hidden; }
+.customization .info .step_btn{ margin:80px 0; overflow: hidden; vertical-align: top; }
+.customization .info .step_btn .verify{ display: inline-block; overflow: hidden; }
+.customization .info .step_btn .verify .title{ height: 46px; font-size: 1.8em; line-height: 46px; display: block; float: left; }
+.customization .info .step_btn .verify .input{ float: left; display: block; width: 80px; padding-left: 8px; padding-right: 8px; margin: 0 10px; letter-spacing:6px; text-transform:uppercase; }
+.customization .info .step_btn .verify .img{ float: left; display: block; width: 80px; height: 46px; }
+.customization .info .step_btn .btn{ vertical-align:top; display: inline-block; font-size: 2.6em; padding-right: 40px; padding-left:40px; margin: 0 0px 0 10px; }
+.customization .info .step_btn .none{ display: none; }
 
 
 
@@ -176,36 +100,15 @@
 }
 
 /* 咨询点评 */
-.consult_remark{
-
-}
-.consult_remark .cr_itme{
-
-}
-.consult_remark .cr_itme .cr_list_wrap{
-
-}
-.consult_remark .cr_itme .cr_list_wrap .m_FAQ:first-child{
-	margin: 0;
-}
-.consult_remark .cr_itme .from{
-	margin: 20px 0;
-}
-.consult_remark .cr_itme .m_message{
-	
-}
-
-.consult_remark .cr_itme .btn_box{
-	text-align: center;
-}
-
-.consult_remark .cr_itme .btn_box .u_btn{
-	font-size: 3em;
-	line-height: 1em;
-	padding: 20px 60px;
-	margin: 20px auto;
-}
-
+.consult_remark{ }
+.consult_remark .u_title{ margin-top:0;  }
+.consult_remark .cr_itme{ }
+.consult_remark .cr_itme .cr_list_wrap{ }
+/*.consult_remark .cr_itme .cr_list_wrap .m_FAQ:first-child{ margin: 0; }*/
+.consult_remark .cr_itme .from{ margin: 20px 0; }
+.consult_remark .cr_itme .m_message{ }
+.consult_remark .cr_itme .btn_box{ text-align: center; }
+.consult_remark .cr_itme .btn_box .u_btn{ font-size: 3em; line-height: 1em; padding: 20px 60px; margin: 20px auto; }
 
 .consult_remark .consult{
 
@@ -216,6 +119,19 @@
 }
 
 
+/* 咨询 详细 */
+.consult_detail{
+
+}
+.consult_detail .relate{
+	
+}
+.consult_detail .relate .m_FAQ{
+	
+}
+.relate .m_FAQ .Q_title{
+	margin: 0;
+}
 
 
 
