@@ -6,36 +6,23 @@
 .index .span_1{ width: 38.2%; padding:1.5% 0 1.5% 1.5%; float: left; }
 
 .index .u_title .txt{ min-width: 100px; padding:0 20px; }
-.index .index_remark .satisfaction{
-	font-size: 2em;
-	line-height: 1em;
-	padding: 4px 0 11px 20px;
-	margin: 0 0 8px 0;
-	/*border: 1px solid #e5e5e5;*/
-	color: #333947;
-	vertical-align: top;
-}
+.index .index_remark .satisfaction{ font-size: 2em; line-height: 1em; padding: 4px 0 11px 20px; margin: 0 0 8px 0; color: #333947; vertical-align: top; }
 .index .index_remark .satisfaction .ico{ color: #f54200; padding:0 4px 0 0; font-size: 1.2em; }
 .index .index_remark .m_FAQ{ padding-top:16px; padding-bottom:16px; }
 .index .index_remark .m_FAQ:first-child{ margin-top: 0; }
 
 
 
-
 /* 推荐线路 */
-.recommend_path{
-
-}
+.recommend_path{ }
 .recommend_path .cover{ position: relative; width: 30%; }
 .recommend_path .cover .img{ width: 100%; display:block; }
 .recommend_path .cover .box{ position: absolute; bottom: 20px; width: 60%; left: 0; right: 0; margin: auto; background: #fff; background: rgba(255,255,255,.7); text-align: center; font-size: 1.6em; padding: 10px; color: #333947; }
 .recommend_path .cover .box .title{ display: block; width: 100%; border-bottom: 1px solid #e5e5e5; text-align: center; font-size: 1.4em; line-height: 1.8em; }
-
 .recommend_path .path_hot{ width: 30%; margin: 0 1.4%; }
 .recommend_path .path_hot .itme{ width: 100%; margin:10px 0 0 0; }
 .recommend_path .path_hot .itme:first-child{ margin:0; }
 .recommend_path .path_hot .itme .title{ height: 25px; }
-
 .recommend_path .ranking{ width: 37.2%; }
 
 
@@ -56,7 +43,6 @@
 
 .index .ranking .itme:hover{ }
 .index .ranking .itme:hover .col{ color: #333947; text-decoration: underline; }
-
 
 
 /* 服务点评 */
@@ -92,12 +78,31 @@
 .fineview{
 	
 }
+/* 美景欣赏 详细*/
+.fineview_detail{
+	
+}
+
+.fineview_detail .m_photo{
+	
+}
+.fineview_detail .m_photo .list{
+	
+}
 
 
 /* 游客风采 */
 .mien{
 
 }
+
+/* 游客风采 详细 */
+.mien_detail{ }
+.mien_detail .info .video{ height: 40px; padding:10px 0; font-size: 2em; line-height: 40px; color: #333947; vertical-align: top; }
+.mien_detail .info .video .icon{ height: 40px; margin: 0 8px 0 0; display: inline-block; font-size: 1.8em; line-height: 40px; -webkit-transition:margin .4s ease-out; -moz-transition:margin .4s ease-out; -ms-transition:margin .4s ease-out; -o-transition:margin .4s ease-out; transition:margin .4s ease-out; }
+.mien_detail .info .video:hover{ color: #f54200; }
+.mien_detail .info .video:hover .icon{ margin: 0 2px 0 6px; }
+
 
 /* 咨询点评 */
 .consult_remark{ }
@@ -109,30 +114,17 @@
 .consult_remark .cr_itme .m_message{ }
 .consult_remark .cr_itme .btn_box{ text-align: center; }
 .consult_remark .cr_itme .btn_box .u_btn{ font-size: 3em; line-height: 1em; padding: 20px 60px; margin: 20px auto; }
-
-.consult_remark .consult{
-
-}
-
-.consult_remark .remark{
-
-}
+.consult_remark .consult{ }
+.consult_remark .remark{ }
 
 
 /* 咨询 详细 */
-.consult_detail{
-
-}
-.consult_detail .relate{
-	
-}
-.consult_detail .relate .m_FAQ{
-	
-}
-.relate .m_FAQ .Q_title{
-	margin: 0;
-}
-
+.consult_detail{ }
+.consult_detail .relate{ }
+.consult_detail .relate .m_FAQ{ }
+.consult_detail .m_edit{ padding-top: 20px; position: relative; }
+.consult_detail .m_edit::before{ content: '答'; position:absolute; top: 0px; left: -10px; display: block; border-radius: 50%; border: 2px solid #eee; font-size: 3em; line-height: 1em; padding:16px; color: #eee; z-index: -1; -webkit-transform: rotate(-25deg); -moz-transform: rotate(-25deg); -ms-transform: rotate(-25deg); -o-transform: rotate(-25deg); transform: rotate(-25deg); opacity: 0.6; filter: alpha(opacity=60); }
+.relate .m_FAQ .Q_title{ margin: 0; }
 
 
 /* 服务点评 */
@@ -142,6 +134,38 @@
 .span_2_FAQ .g_span_pct50:nth-child(2n) .m_FAQ{ margin: 0 0px 20px 20px; }
 .span_2_FAQ .m_FAQ_even{ margin: 0 0px 20px 20px; }
 
+/* 点评详细 */
+.remark_detail{
+
+}
+
+
+
+
+
+/* 出游贴士 */
+.strategy{
+
+}
+
+/* 出游贴士 详细 */
+.strategy_detail{
+	
+}
+.strategy_detail .info{
+	
+}
+.strategy_detail .info .m_photo{
+	
+}
+.strategy_detail .info .m_photo .list{
+	
+}
+.strategy_detail .info .m_photo .list:nth-child(2n) .div{
+	
+}
+
+
 /* 关于我们 */
 .about{ padding: 60px 0; overflow: hidden; }
 .about .cover{ width: 50%; float: left; }
@@ -149,6 +173,17 @@
 .about .info .name{ padding: 0 0 20px 0; font-size: 3em; line-height: 1em; text-align: center; }
 .about .info .m_edit{ padding:0 20px; }
 
+
+
+/* 问题 */
+.issue_list{
+
+}
+
+/* 问题 详细 */
+.issue_detail{
+
+}
 
 
 /* css3动画 */
@@ -173,7 +208,16 @@
 .u_btn,
 .m_message .item .input,
 .m_message .item .grade,
-.customization .step .list{
+.customization .step .list,
+.m_photo_vertical .list .describe,
+.mien_detail .info .video,
+.issue dl dt a,
+.u_radio,
+.u_radio .bg,
+.u_radio .bg:after,
+.u_radio,
+.u_radio .bg,
+.u_radio .bg:after{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

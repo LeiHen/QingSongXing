@@ -15,8 +15,6 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .w_min{ min-width: 1200px; margin: auto; }
 
 
-
-
 .header{ height: 120px; overflow: hidden; }
 .header .w{ height: 120px; }
 
@@ -52,6 +50,10 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .col .span_2_1:last-child{ padding: 1.5% 0 1.5% 1.5%; }
 .col .span_2_1_cpr{ padding: 1.5% 0 1.5% 1.5%; }
 /*.span_2_1{ width: 63.8%; padding: 1.5%; }*/
+
+
+.col_mn .span_3_1{ width: 38.2%; }
+.col_mn .span_3_2{ width: 61.8%; }
 
 
 /*
@@ -91,6 +93,12 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 	background: none;
 }
 
+/* 标题 2 */
+.u_title_2{ margin: 10px auto; font-size: 1.8em; line-height: 2em; color: #fff; position: relative; border-bottom:2px solid #333947; }
+.u_title_2 .txt{ width:14%; min-width: 100px; background-color:#333947; display: inline-block; +display: inline; +zoom: 1; text-align: center; }
+
+
+
 /* 按钮 */
 .u_btn{ display: inline-block; +display: inline; +zoom: 1; padding: 10px 20px; border: none; font-size: 1.8em; line-height: 1em; color: #fff; background: #333947; background: rgba(51,57,71,.9); cursor: pointer;}
 .u_btn:hover{ background: #f54200; background: rgba(245,66,0,.9); }
@@ -114,6 +122,17 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .input{ display: block; width: 95.2%; padding: 0.5em 2%; background: none; border:1px solid #e5e5e5; font-size: 2em; line-height: 1em; color: #333947; }
 .input:hover{ border:1px solid #f54200; }
 .input:focus{ border:1px solid #f54200; outline:1px solid #f54200; }
+
+/* 单选 */
+.u_radio{ position: relative; height: 25px; width:auto; cursor:pointer; width: auto; display: inline-block; padding:0 130px 0 0; }
+.u_radio .radio{ display: none; }
+.u_radio .txt{ position: absolute; top: 0; left: 34px; display: block; width: 100px; padding: 0 4px; height: 25px; font-size: 1.8em; vertical-align: middle; }
+.u_radio .bg{ cursor: pointer; position: absolute; top: 0; left: 0; display: block; width: 25px; height: 25px; border-radius: 50%; background: #eee; border:1px solid #e5e5e5; }
+.u_radio .bg:after { content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 10px; height: 10px; border-radius: 50%; background: #8b8a8a; border: none; opacity: 0.2; filter: alpha(opacity=20); }
+
+.u_radio:hover .bg::after { opacity: 0.5; filter: alpha(opacity=50); }
+.u_radio input[type=radio]:checked + .bg:after { background: #f54200; opacity: 1; filter: alpha(opacity=100); }
+
 
 /* 
 	模块
@@ -144,10 +163,10 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 /* 编辑框 */
 .m_edit{ font-size: 1.4em; line-height: 1.8em; }
-.m_edit p{ padding: 4px 0; text-indent: 2em; }
+.m_edit p{ padding: 6px 0; text-indent: 2em; }
 .m_edit ul{ }
 .m_edit li{ }
-.m_edit img{ }
+.m_edit img{ width: 100%;display: block;}
 
 
 /* ad top */
@@ -155,6 +174,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .m_ad_top img{ display: block; }
 .m_ad_top .btn_close{ position: absolute; top: 50%; right: 20px; margin:-15px 0 0 0; color: #fff; color: rgba(255,255,255,.8); font-size: 2em; line-height: 1em; }
 .m_ad_top .btn_close:hover{color:#fff; color: rgba(255,255,255,1); }
+
 
 /* 列表 */
 .m_list{ }
@@ -222,53 +242,40 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 
 /* 列表 */
-.m_list_relate{
+.m_list_relate{ }
+.m_list_relate .list{ cursor:pointer; position: relative; }
+
+.m_list_relate .m_FAQ{ min-width: 314px; margin: 10px 0 0 0; }
+.m_list_relate .m_FAQ:first-child{ margin: 0; }
+.m_list_relate .m_FAQ .Q_title{ margin: 0; }
+
+
+/* 列表 图集 */
+.m_photo{
 
 }
-.m_list_relate .list{
-	cursor:pointer;
-	position: relative;
-}
 
 
-
-
-
-
-.m_list_relate .m_FAQ{
-	/*width: 99%;*/
-	min-width: 314px;
-	margin: 10px 0 0 0;
-}
-.m_list_relate .m_FAQ:first-child{
-	margin: 0;
-}
-.m_list_relate .m_FAQ .Q_title{
-	margin: 0;
-}
+/* 列表 图集 垂直 */
+.m_photo_vertical{ }
+.m_photo_vertical .list{ margin: 60px auto; }
+.m_photo_vertical .list .img{ width: 100%; display: block; }
+.m_photo_vertical .list .describe{ padding:20px; margin: 10px 0; border: 1px dashed #e5e5e5; font-size: 1.4em; line-height: 1.8em; color: #333947; }
+.m_photo_vertical .list:hover .describe{ border: 1px dashed #f54200; }
 
 
 
 /* 文章 */
-.m_article{
-
-}
-.m_article .title{
-	font-size: 2.4em;
-	line-height: 1.2em;
-	padding: 0 0 20px 0;
-}
-.m_article .time{
-	font-size: 1.4em;
-	line-height: 1em;
-	padding: 0 0 20px 0;  
-}
-.m_article .info{
+.m_article{ padding: 0 20px 0 20px; }
+.m_article .title{ font-size: 2.4em; line-height: 1.2em; padding: 0 0 20px 0; }
+.m_article .title .ico{ color: #f54200; }
+.m_article .time{ font-size: 1.4em; line-height: 1em; padding: 0 0 20px 0; display: block; }
+.m_article .time .ico{ font-size: 1em; line-height: 1em; padding: 0 4px; }
+.m_article .cover{ display: block; width: 100%; max-width: 100%; }
+.m_article .info{ margin: 40px auto; }
+.m_article .info .list{
 	margin: 40px auto;
 }
-
-
-
 
 
 
@@ -299,11 +306,9 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .m_message .item .input.select_3{ width: 31%; margin: 0 0 0 3.5%; display: block; float: left; }
 .m_message .item .select_3:first-child{ margin: 0; }
 
-
-
-
-
-
+.m_message .item .u_radio{
+	margin:8px 0 0 0;
+}
 
 
 /* 导航 */
@@ -330,6 +335,8 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .issue{ background: #333947; padding: 30px 0; }
 .issue dl{ display: inline-block; padding: 0 20px 0 1.5%; width: 16.5%; }
 .issue dl dt{ padding: 0 0 10px 0; color: #b1bfe5; font-size: 1.8em; }
+.issue dl dt a{color: #b1bfe5;}
+.issue dl dt a:hover{color: #fff;}
 .issue dl dd{ }
 .issue dl dd a{ display: block; color: #fff; color: #828ca8; font-size: 1.4em; line-height: 1.6em; }
 .issue dl dd a:hover,

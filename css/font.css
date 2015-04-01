@@ -57,6 +57,14 @@
 	content: "\e611";
 }
 
+.icon_time:before {
+	content: "\e613";
+}
+
+.icon_bike:before {
+	content: "\e614";
+}
+
 .icon_snowy:before {
 	content: "\e600";
 }
@@ -77,6 +85,10 @@
 	content: "\e93e";
 }
 
+.icon_spinner:before {
+	content: "\e97b";
+}
+
 .icon_fire:before {
 	content: "\e9a9";
 }
@@ -89,8 +101,48 @@
 	content: "\e604";
 }
 
+.icon_video:before {
+	content: "\e61e";
+}
+
 .icon_plentiful:before {
 	content: "\e605";
+}
+
+.icon_info_large:before {
+	content: "\e61d";
+}
+
+.icon_directions_bike:before {
+	content: "\e615";
+}
+
+.icon_directions_bus:before {
+	content: "\e616";
+}
+
+.icon_directions_car:before {
+	content: "\e617";
+}
+
+.icon_directions_ferry:before {
+	content: "\e618";
+}
+
+.icon_directions_subway:before {
+	content: "\e619";
+}
+
+.icon_directions_train:before {
+	content: "\e61a";
+}
+
+.icon_directions_walk:before {
+	content: "\e61b";
+}
+
+.icon_flight:before {
+	content: "\e61c";
 }
 
 .icon_mapmarker:before {
@@ -109,6 +161,10 @@
 	content: "\f088";
 }
 
+.icon_paper_plane:before {
+	content: "\f1d8";
+}
+
 .icon_aircraft:before {
 	content: "\e607";
 }
@@ -120,4 +176,3 @@
 .icon_heart:before {
 	content: "\e609";
 }
-
