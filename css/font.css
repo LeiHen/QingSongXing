@@ -25,154 +25,44 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon_checkmark:before {
-	content: "\e60a";
-}
+.icon_checkmark:before { content: "\e60a"; }
+.icon_checkmark2:before { content: "\e60b"; }
+.icon_cancel:before { content: "\e60c"; }
+.icon_cancel2:before { content: "\e60d"; }
+.icon_plus:before { content: "\e60e"; }
+.icon_plus2:before { content: "\e60f"; }
+.icon_minus:before { content: "\e610"; }
+.icon_minus2:before { content: "\e611"; }
+.icon_time:before { content: "\e613"; }
+.icon_bike:before { content: "\e614"; }
+.icon_list:before { content: "\e620"; }
+.icon_snowy:before { content: "\e600"; }
+.icon_search:before { content: "\e601"; }
+.icon_forkandknife:before { content: "\e61f"; }
+.icon_brightness:before { content: "\e602"; }
+.icon_office:before { content: "\e903"; }
+.icon_coin_rmb:before { content: "\e93e"; }
+.icon_spinner:before { content: "\e97b"; }
+.icon_fire:before { content: "\e9a9"; }
+.icon_logo:before { content: "\e603"; }
+.icon_logo_icon:before { content: "\e604"; }
+.icon_video:before { content: "\e61e"; }
+.icon_plentiful:before { content: "\e605"; }
+.icon_info_large:before { content: "\e61d"; }
+.icon_directions_bike:before { content: "\e615"; }
+.icon_directions_bus:before { content: "\e616"; }
+.icon_directions_car:before { content: "\e617"; }
+.icon_directions_ferry:before { content: "\e618"; }
+.icon_directions_subway:before { content: "\e619"; }
+.icon_directions_train:before { content: "\e61a"; }
+.icon_directions_walk:before { content: "\e61b"; }
+.icon_flight:before { content: "\e61c"; }
+.icon_mapmarker:before { content: "\e612"; }
+.icon_atom:before { content: "\e606"; }
+.icon_thumbs_o_up:before { content: "\f087"; }
+.icon_thumbs_o_down:before { content: "\f088"; }
+.icon_paper_plane:before { content: "\f1d8"; }
+.icon_aircraft:before { content: "\e607"; }
+.icon_heart_outlined:before { content: "\e608"; }
+.icon_heart:before { content: "\e609"; }
 
-.icon_checkmark2:before {
-	content: "\e60b";
-}
-
-.icon_cancel:before {
-	content: "\e60c";
-}
-
-.icon_cancel2:before {
-	content: "\e60d";
-}
-
-.icon_plus:before {
-	content: "\e60e";
-}
-
-.icon_plus2:before {
-	content: "\e60f";
-}
-
-.icon_minus:before {
-	content: "\e610";
-}
-
-.icon_minus2:before {
-	content: "\e611";
-}
-
-.icon_time:before {
-	content: "\e613";
-}
-
-.icon_bike:before {
-	content: "\e614";
-}
-
-.icon_snowy:before {
-	content: "\e600";
-}
-
-.icon_search:before {
-	content: "\e601";
-}
-
-.icon_brightness:before {
-	content: "\e602";
-}
-
-.icon_office:before {
-	content: "\e903";
-}
-
-.icon_coin_rmb:before {
-	content: "\e93e";
-}
-
-.icon_spinner:before {
-	content: "\e97b";
-}
-
-.icon_fire:before {
-	content: "\e9a9";
-}
-
-.icon_logo:before {
-	content: "\e603";
-}
-
-.icon_logo_icon:before {
-	content: "\e604";
-}
-
-.icon_video:before {
-	content: "\e61e";
-}
-
-.icon_plentiful:before {
-	content: "\e605";
-}
-
-.icon_info_large:before {
-	content: "\e61d";
-}
-
-.icon_directions_bike:before {
-	content: "\e615";
-}
-
-.icon_directions_bus:before {
-	content: "\e616";
-}
-
-.icon_directions_car:before {
-	content: "\e617";
-}
-
-.icon_directions_ferry:before {
-	content: "\e618";
-}
-
-.icon_directions_subway:before {
-	content: "\e619";
-}
-
-.icon_directions_train:before {
-	content: "\e61a";
-}
-
-.icon_directions_walk:before {
-	content: "\e61b";
-}
-
-.icon_flight:before {
-	content: "\e61c";
-}
-
-.icon_mapmarker:before {
-	content: "\e612";
-}
-
-.icon_atom:before {
-	content: "\e606";
-}
-
-.icon_thumbs_o_up:before {
-	content: "\f087";
-}
-
-.icon_thumbs_o_down:before {
-	content: "\f088";
-}
-
-.icon_paper_plane:before {
-	content: "\f1d8";
-}
-
-.icon_aircraft:before {
-	content: "\e607";
-}
-
-.icon_heart_outlined:before {
-	content: "\e608";
-}
-
-.icon_heart:before {
-	content: "\e609";
-}

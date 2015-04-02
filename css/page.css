@@ -73,49 +73,32 @@
 .path{
 	
 }
+/* 路线大全 详细 */
+.path_detail{
+	
+}
+
+
 
 /* 美景欣赏 */
-.fineview{
-	
-}
+.fineview{ }
+
 /* 美景欣赏 详细*/
-.fineview_detail{
-	
-}
+.fineview_detail{ }
 
-.fineview_detail .m_photo{
-	
-}
-.fineview_detail .m_photo .list{
-	height: 530px;
-	float: left;
-}
+.fineview_detail .m_photo{ }
+.fineview_detail .m_photo .list{ height: 530px; float: left; }
 .fineview_detail .info .m_photo .list:nth-child(4n+1),
-.fineview_detail .info .m_photo .list:nth-child(4n){
-	/*width: 61.8%;*/
-}
+.fineview_detail .info .m_photo .list:nth-child(4n){ width: 61.8%; }
 .fineview_detail .info .m_photo .list:nth-child(4n+2),
-.fineview_detail .info .m_photo .list:nth-child(4n+3){
-	/*width: 38.2%;*/
-}
+.fineview_detail .info .m_photo .list:nth-child(4n+3){ width: 38.2%; }
 
-
-.fineview_detail .info .m_photo .list:nth-child(2n+1) .plr{
-	padding-left:0;
-	margin-left: 0;
-}
-.fineview_detail .info .m_photo .list:nth-child(2n) .plr{
-	padding-right:0;
-	margin-right: 0;
-}
-
-
+.fineview_detail .info .m_photo .list:nth-child(2n+1) .plr{ padding-left:0; margin-left: 0; }
+.fineview_detail .info .m_photo .list:nth-child(2n) .plr{ padding-right:0; margin-right: 0; }
 
 
 /* 游客风采 */
-.mien{
-
-}
+.mien{ }
 
 /* 游客风采 详细 */
 .mien_detail{ }
@@ -156,9 +139,7 @@
 .span_2_FAQ .m_FAQ_even{ margin: 0 0px 20px 20px; }
 
 /* 点评详细 */
-.remark_detail{
-
-}
+.remark_detail{ }
 
 
 
@@ -170,12 +151,8 @@
 }
 
 /* 出游贴士 详细 */
-.strategy_detail{
-	
-}
-.strategy_detail .info{
-	
-}
+.strategy_detail{ }
+.strategy_detail .info{ }
 
 
 
@@ -189,41 +166,23 @@
 
 
 /* 问题 */
-.issue_list{
-
-}
+.issue_list{ }
 
 /* 问题 详细 */
-.issue_detail{
-
-}
+.issue_detail{ }
 
 
 
 /* 404 */
-.div_404{
-	padding: 0 0 80px 0;
-	text-align: center;
-}
-.div_404 img{
-	display: block;
-	margin: 0 auto;
-	width: 260px;
-}
-.div_404 p{
-	text-align: center;
-	font-size: 3em;
-	line-height: 1.4em;
-	color: #333947;
-	text-shadow: 0px -1px 0px #8b8a8a, 0px 2px 0px #e5e5e5;
-}
-.div_404 .btn{
-	margin: 40px 0;
-}
+.div_404{ padding: 0 0 80px 0; text-align: center; }
+.div_404 img{ display: block; margin: 0 auto; width: 260px; }
+.div_404 p{ text-align: center; font-size: 3em; line-height: 1.4em; color: #333947; text-shadow: 0px -1px 0px #8b8a8a, 0px 2px 0px #e5e5e5; }
+.div_404 .btn{ margin: 40px 0; }
 
-
-
-
+/* search */
+.search{ }
+.search .info{ }
+.search .info>.list{ margin: 40px 0; }
 
 
 
@@ -266,7 +225,8 @@
 .u_radio .bg,
 .u_radio .bg:after,
 .m_photo .list .plr,
-.m_photo .list .plr .title{
+.m_photo .list .plr .title,
+.m_list_txt .list .line{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
