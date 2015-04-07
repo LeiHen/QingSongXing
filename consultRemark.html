@@ -33,9 +33,9 @@
 	</head>
 	<body>	
 		<!-- AD banner [[ -->
-		<div class="m_ad_top w">
+		<div class="m_ad_top w" id="adTop">
             <img src="images/ad/img_001_1200x70.jpg" alt="" class="img">
-		    <a href="#" class="icon_cancel btn_close" title="关闭"></a>
+		    <a  class="icon_cancel btn_close" title="关闭"></a>
         </div>
 		<!-- AD banner ]] -->
       
@@ -50,7 +50,8 @@
                     <!-- 搜索 [[ -->
                     <div class="search">
                         <form action="search.html"  target="_blank">
-                            <input class="txt" type="search" value="请输入关键字" >
+                            <input class="txt" id="search" type="search" value="" >
+                            <span class="prompt">请输入关键字</span>
                             <button class="btn_search icon_search" type="submit"></button>
                         </form>
                     </div>
@@ -156,7 +157,7 @@
                 </div>
                 
                 <dd class="from">
-                    <dl class="m_message none">
+                    <dl class="m_message none" id="consultBox">
                         <div class="item">
                             <span class="title">咨询内容</span>
                             <textarea class="input" name="" id="" rows="10"></textarea>
@@ -171,7 +172,9 @@
                         </div>
                     </dl>
                     
-                    <dl class="btn_box"><a href="" class="u_btn" title="点击展开">咨询问题</a></dl>
+                    <dl class="btn_box">
+                        <a class="u_btn" id="consultBtn" title="点击展开">咨询问题</a>
+                    </dl>
                 </dd>
                 
             </div>
@@ -398,7 +401,8 @@
         <!-- footer ]] -->
       
        
-        <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<!--        <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>-->
+        <script src="js/lib/jquery.1.10.2.min.js"></script>
 <!--        <script src="http://libs.baidu.com/jqueryui/1.10.2/jquery-ui.min.js "></script>-->
         
         <script src="js/base.js"></script>
@@ -408,7 +412,7 @@
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-
+                hideShowBtn("consultBtn","consultBox");
 			}
 			init();
 		</script>

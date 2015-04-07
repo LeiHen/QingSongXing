@@ -10,6 +10,11 @@
 * @dependent:总初始化
 */
 function mianInit(){
+	//广告 顶部 关闭
+	adClose('adTop');
+
+	//提示清除
+	promptClear('search');
 	
 }
 mianInit();

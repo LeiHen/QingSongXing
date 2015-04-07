@@ -32,9 +32,9 @@
 	</head>
 	<body>	
 		<!-- AD banner [[ -->
-		<div class="m_ad_top w">
+		<div class="m_ad_top w" id="adTop">
             <img src="images/ad/img_001_1200x70.jpg" alt="" class="img">
-		    <a href="#" class="icon_cancel btn_close" title="关闭"></a>
+		    <a  class="icon_cancel btn_close" title="关闭"></a>
         </div>
 		<!-- AD banner ]] -->
       
@@ -49,7 +49,7 @@
                     <!-- 搜索 [[ -->
                     <div class="search">
                         <form action="search.html" target="_blank">
-                            <input class="txt" type="search" value="请输入关键字" >
+                            <input class="txt" id="search" type="search" value="" >                             <span class="prompt">请输入关键字</span>
                             <button class="btn_search icon_search" type="submit"></button>
                         </form>
                     </div>
@@ -87,7 +87,7 @@
     
         <!-- banner [[ -->
         <div class="m_banner w_min">
-          <ul class="info">
+          <ul class="info" id="bannerTab">
               <li class="hover"><img src="images/banner/index/img_01_1280x450.jpg" alt="" class="img"></li>
               <li><img src="images/banner/index/img_02_1280x450.jpg" alt="" class="img"></li>
               <li><img src="images/banner/index/img_03_1280x450.jpg" alt="" class="img"></li>
@@ -334,7 +334,8 @@
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-
+                //banner 切换
+                bannerTab("bannerTab");
 			}
 			init();
 		</script>

@@ -22,8 +22,18 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .header .logo .img{ display: block; max-width: 100%; }
 .header .logo:hover .img{ -webkit-transform:scale(0.98); -moz-transform:scale(0.98); -ms-transform:scale(0.98); -o-transform:scale(0.98); transform:scale(0.98); }
 
-.header .search{ float: right; height: 40px; margin: 20px 0; overflow: hidden; }
+.header .search{ position: relative; float: right; height: 40px; margin: 20px 0; overflow: hidden; }
 .header .search .txt{ display:block; float: left; padding: 0px 10px; border: 4px solid #5f9dcc; font-size: 20px; line-height:32px; color: #8b8a8a; outline: none; overflow: visible; }
+.header .search .prompt{
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0px 14px;
+	font-size: 20px;
+	line-height:40px;
+	color: #8b8a8a;
+}
 .header .search .btn_search{ float: left; display: block; padding:0 20px; border: none; height: 40px; background-color: #5f9dcc; line-height: 40px; font-size: 1.8em; color: #fff; cursor:pointer; }
 .header .search:hover{ }
 .header .search:hover .txt{ /*border: 4px solid #3c3c3c; */ border: 4px solid #f54200; }
@@ -158,7 +168,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 /* banner */
 .m_banner{ }
-.m_banner .info{ width: 100%; position: relative; overflow: hidden; }
+.m_banner .info{ width: 100%; position: relative; overflow: hidden; background:#1f2227;}
 .m_banner .info li{ float: left; position: absolute; left: 0; top: 0; width: 100%; z-index: 1; opacity: 0; filter: alpha(opacity=0); 	background: url(../images/default_img.png) no-repeat center center;background-size: cover;}
 .m_banner .info li .img{ display: block; width: 100%; }
 /*.m_banner .info li:first-child,*/

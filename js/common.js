@@ -18,6 +18,8 @@ function adClose(id) {
                 height:0
             }, 2*500)
         },300)
+
+        return false
     });
 }
 /* @end **/
@@ -44,22 +46,56 @@ function bannerTab(id) {
         
         li.animate({
             opacity:0
-        }, 1000)
+        }, 600)
         setTimeout(function(){
             li.removeClass('hover');
-        },1000)
+            i=i+1;
+            if (i>=imgL) {
+                i=0;
+            };
+            $(li[i]).addClass('hover').animate({
+                opacity:1
+            }, 600);
+        },600)
 
-        // i=i+1;
-        // if (i>=imgL) {
-        //     i=0;
-        // };
+    },7600)
+}
+/* @end **/
+
+/**
+ * @name     :hideShowBtn
+ * @author   :Nice
+ * @dependent:咨询点评
+ */
+function hideShowBtn(hideID,showID) {
+    var eHide=$('#'+hideID);
+    var eShow=$('#'+showID);
+
+    // var btn=e.find('.btn_close');
+    console.log(eHide);
+
+    eHide.click(function(event) {
+        $(this).animate({
+            height:0,
+            marginTop:0,
+            marginBottom:0,
+            paddingTop:0,
+            paddingBottom:0
+        }, 400)
+
+        eShow.css({
+            height: 0,
+        });
+        eShow.removeClass('none');
+        eShow.animate({
+            height:100+'%'
+        }, 1000)
         
-        // $(li[i]).addClass('hover');
+        // console.log('dsf'); 
+    });
 
-        // console.log(i)
-    },2000)
-
-    
+   
+   
 
     // btn.click(function(event) {
     //     e.animate({
@@ -70,32 +106,46 @@ function bannerTab(id) {
     //             height:0
     //         }, 2*500)
     //     },300)
+    //     return false
     // });
+
 }
 /* @end **/
 
 
 /**
- * @name     :adClose
+ * @name     :promptClear
  * @author   :Nice
- * @dependent:广告关闭
+ * @dependent:提示清除
  */
-function adClose(id) {
-    var e=$('#'+id);
-    var btn=e.find('.btn_close');
+function promptClear(ID) {
+    var e=$('#'+ID);
+    var hint=e.next(".prompt");
 
-    btn.click(function(event) {
-        e.animate({
-            opacity:0
-        }, 300)
-        setTimeout(function(){
-            e.animate({
-                height:0
-            }, 2*500)
-        },300)
+    e.focus(function(event) {
+        if (e.val()=='') {
+            hint.addClass('none');
+        };
+    });
+
+    e.blur(function(event) {
+        if (e.val()=='') {
+            hint.removeClass('none');
+        };
+    });
+
+    hint.click(function(event) {
+        if (e.val()=='') {
+            hint.addClass('none');
+        };
+        e.focus();
     });
 }
 /* @end **/
+
+
+
+
 
 
 
