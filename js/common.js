@@ -75,21 +75,44 @@ function hideShowBtn(hideID,showID) {
     console.log(eHide);
 
     eHide.click(function(event) {
-        $(this).animate({
-            height:0,
-            marginTop:0,
-            marginBottom:0,
-            paddingTop:0,
-            paddingBottom:0
-        }, 400)
+        // $(this).animate({
+        //     height:0,
+        //     marginTop:0,
+        //     marginBottom:0,
+        //     paddingTop:0,
+        //     paddingBottom:0
+        // }, 400)
 
-        eShow.css({
-            height: 0,
-        });
-        eShow.removeClass('none');
-        eShow.animate({
-            height:100+'%'
-        }, 1000)
+
+        // eShow.css({
+        //     height: 0,
+        // });
+
+        // eShow.removeClass('none');
+        // eShow.css("height","auto");
+        // eShow.css({
+        //     height: 100+'%'
+        // });
+
+
+    // eShow.css({
+    //     height: 'auto',
+    //     opacity: 1
+    // });
+
+eShow.animate({
+    height:100+'%',
+    opacity: 1
+}, 400)
+
+    // eShow.css("transform","translateY(0)");
+
+        // setTimeout(function(){
+        //     eShow.css("transform","translateY(0)");
+        // },1400)
+        
+
+        
         
         // console.log('dsf'); 
     });
