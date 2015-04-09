@@ -157,7 +157,7 @@
                 </div>
                 
                 <dd class="from">
-                    <dl class="m_message " id="consultBox">
+                    <dl class="m_message none" id="consultBox">
                         <div class="item">
                             <span class="title">咨询内容</span>
                             <textarea class="input" name="" id="" rows="10"></textarea>
@@ -243,7 +243,7 @@
                 
                 <dd class="from">
                    
-                    <dl class="m_message none" >
+                    <dl class="m_message none" id='remarkBox'>
                         <div class="item">
                             <span class="title">旅游线路</span>
                             <input class="input" type="text">
@@ -256,7 +256,7 @@
                         </div>
                         <div class="item">
                             <span class="title">整体评分</span>
-                            <input class="input" type="text">
+<!--                            <input class="input" type="text">-->
                             <ul class="grade satisfaction">
                                 <li class="ico icon_heart_outlined icon_heart"></li>
                                 <li class="ico icon_heart_outlined"></li>
@@ -273,14 +273,14 @@
                         <div class="item">
                             <input class="u_btn btn_sub" type="submit" value="提交">
                         </div>
-                        <div class="u_shade">
+                        <div class="u_shade none">
                            <div class="table">
                                <span class="info">提交成功</span>
                            </div>
                         </div>
                     </dl>
                     
-                    <dl class="btn_box"><a href="" class="u_btn" title="点击展开">点评服务</a></dl>
+                    <dl class="btn_box"><a class="u_btn" id='remarkBtn' title="点击展开">点评服务</a></dl>
                     
                 </dd>
                 
@@ -412,7 +412,10 @@
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
+                //咨询隐藏显示
                 hideShowBtn("consultBtn","consultBox");
+                //点评隐藏显示
+                hideShowBtn("remarkBtn","remarkBox");
 			}
 			init();
 		</script>

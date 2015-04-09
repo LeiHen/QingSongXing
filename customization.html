@@ -92,245 +92,247 @@
         <!-- banner ]] -->
         
         <!-- content [[ -->
-        <div class="content w clearFix customization">
+        <div class="content w clearFix customization" id="customizationForm">
             <h1 class="u_title"><span class="txt">包团定制</span></h1>
-            <div class="wrap60">            
+            <div class="wrap60" id="">            
                 <ul class="step">
                     <li class="list active">1.出游信息</li>
                     <li class="list">2.联系方式</li>
 <!--                    <li class="list">3.信息提交</li>-->
                 </ul>
                 
-                <ul class="info">
-                    <li class="list">
-                        <dl class="m_message">
-                           <dd class="item">
-                                
-                                <label class="u_radio" for="natureCompany">
-                                    <div class="txt">公司包团</div>
-                                    <input class="radio" type="radio" value="公司包团" id="natureCompany" name="nature" />
-                                    
-                                    <div class="bg"></div>
-                                </label>
-                                
-                                <label class="u_radio" for="naturePrivate">
-                                    <div class="txt">私家包团</div>
-                                    <input class="radio" type="radio" value="私家包团" id="naturePrivate" name="nature" />
-                                    
-                                    <div class="bg"></div>
-                                </label>
-                                
-                                <label class="u_radio" for="natureStudent">
-                                    <div class="txt">学生包团</div>
-                                    <input class="radio" type="radio" value="学生包团" id="natureStudent" name="nature" />
-                                    
-                                    <div class="bg"></div>
-                                </label>
-                                
-                                <span class="title">包团性质：</span>
-                            </dd>
-                            <dd class="item">
-                                <select class="input select_3" name=""> 
-                                    <option value="选择省份">省份</option> 
-                                    <option value="广东">广东</option> 
-                                    <option value="北京">北京</option> 
-                                    <option value="上海">上海</option> 
-                                </select>
-                                <select class="input select_3" name=""> 
-                                    <option value="选择省份">城市</option> 
-                                    <option value="广州">广州</option> 
-                                    <option value="北京">潮州</option>
-                                    <option value="茂名">茂名</option>
-                                    <option value="汕头">汕头</option> 
-                                    <option value="珠海">珠海</option>
-                                </select>
-                                <select class="input select_3" name=""> 
-                                    <option value="选择省份">县区</option> 
-                                    <option value="广东">湘桥</option> 
-                                    <option value="北京">潮安</option> 
-                                    <option value="上海">饶平</option> 
-                                </select>
-                                <span class="title">出发地点：</span>
-                            </dd>
-                            <dd class="item">   
-                                <select class="input select_3" name=""> 
-                                    <option value="选择省份">省份</option> 
-                                    <option value="广东">广东</option> 
-                                    <option value="北京">北京</option> 
-                                    <option value="上海">上海</option> 
-                                </select>
-                                <select class="input select_3" name=""> 
-                                    <option value="选择省份">城市</option> 
-                                    <option value="广州">广州</option> 
-                                    <option value="北京">潮州</option>
-                                    <option value="茂名">茂名</option>
-                                    <option value="汕头">汕头</option> 
-                                    <option value="珠海">珠海</option>  
-                                </select>
-                                <select class="input select_3" name=""> 
-                                    <option value="选择省份">县区</option> 
-                                    <option value="广东">湘桥</option> 
-                                    <option value="北京">潮安</option> 
-                                    <option value="上海">饶平</option> 
-                                </select>
-                                <span class="title">目的地点：</span>
-                            </dd>
-                            <dd class="item">
-                                <input class="input select_2" type="date">
-                                <span class="dash">-</span>
-                                <input class="input select_2" type="date">
-                                
-                                <span class="title">出发时间：</span>
-                            </dd>
-                            <dd class="item">
-                                <input class="input select_2" type="number" min="0" step="1">
-                                <span class="dash">-</span>
-                                <input class="input select_2" type="number" min="1" step="1">
-                                <span class="title">计划人数：</span>
-                            </dd>
-                            <dd class="item">
-                                <input class="input select_2" type="number" min="1" step="100">
-                                <span class="dash">-</span>
-                                <input class="input select_2" type="number" min="1" step="100">
-                                <span class="title">每人预算：</span>
-                            </dd>
-                            <dd class="item">
-                               
-                                <label class="u_checkbox" for="checkboxEconomy">
-                                    <div class="txt">经济型</div>
-                                    <input class="checkbox" type="checkbox" value="经济型" id="checkboxEconomy" name="putup" />
-                                    <div class="bg"></div>
-                                </label>
+                <div class="info_wrap">
+                    <ul class="info">
+                        <li class="list">
 
-                                <label class="u_checkbox" for="checkboxThree">
-                                    <div class="txt">三星级</div>
-                                    <input class="checkbox" type="checkbox" value="三星级" id="checkboxThree" name="putup" />
-                                    <div class="bg"></div>
-                                </label>
+                            <dl class="m_message">
+                                <dd class="item">
 
-                                <label class="u_checkbox" for="checkboxFour">
-                                    <div class="txt">四星级</div>
-                                    <input class="checkbox" type="checkbox" value="四星级" id="checkboxFour" name="putup" />
-                                    <div class="bg"></div>
-                                </label>
+                                    <label class="u_radio" for="natureCompany">
+                                        <div class="txt">公司包团</div>
+                                        <input class="radio" type="radio" value="公司包团" id="natureCompany" name="nature" />
 
-                                <label class="u_checkbox" for="checkboxFive">
-                                    <div class="txt">五星级</div>
-                                    <input class="checkbox" type="checkbox" value="五星级" id="checkboxFive" name="putup" />
-                                    <div class="bg"></div>
-                                </label>
+                                        <div class="bg"></div>
+                                    </label>
 
-                                <label class="u_checkbox" for="checkboxAssign">
-                                    <div class="txt">指定酒店</div>
-                                    <input class="checkbox" type="checkbox" value="指定酒店" id="checkboxAssign" name="putup" />
-                                    <div class="bg"></div>
-                                </label>
+                                    <label class="u_radio" for="naturePrivate">
+                                        <div class="txt">私家包团</div>
+                                        <input class="radio" type="radio" value="私家包团" id="naturePrivate" name="nature" />
 
-                                <label class="u_checkbox" for="checkboxNo">
-                                    <div class="txt">免定安排</div>
-                                    <input class="checkbox" type="checkbox" value="免定安排" id="checkboxNo" name="putup" />
-                                    <div class="bg"></div>
-                                </label>
+                                        <div class="bg"></div>
+                                    </label>
+
+                                    <label class="u_radio" for="natureStudent">
+                                        <div class="txt">学生包团</div>
+                                        <input class="radio" type="radio" value="学生包团" id="natureStudent" name="nature" />
+
+                                        <div class="bg"></div>
+                                    </label>
+
+                                    <span class="title">包团性质：</span>
+                                </dd>
+                                <dd class="item">
+                                    <select class="input select_3" name=""> 
+                                        <option value="选择省份">省份</option> 
+                                        <option value="广东">广东</option> 
+                                        <option value="北京">北京</option> 
+                                        <option value="上海">上海</option> 
+                                    </select>
+                                    <select class="input select_3" name=""> 
+                                        <option value="选择省份">城市</option> 
+                                        <option value="广州">广州</option> 
+                                        <option value="北京">潮州</option>
+                                        <option value="茂名">茂名</option>
+                                        <option value="汕头">汕头</option> 
+                                        <option value="珠海">珠海</option>
+                                    </select>
+                                    <select class="input select_3" name=""> 
+                                        <option value="选择省份">县区</option> 
+                                        <option value="广东">湘桥</option> 
+                                        <option value="北京">潮安</option> 
+                                        <option value="上海">饶平</option> 
+                                    </select>
+                                    <span class="title">出发地点：</span>
+                                </dd>
+                                <dd class="item">   
+                                    <select class="input select_3" name=""> 
+                                        <option value="选择省份">省份</option> 
+                                        <option value="广东">广东</option> 
+                                        <option value="北京">北京</option> 
+                                        <option value="上海">上海</option> 
+                                    </select>
+                                    <select class="input select_3" name=""> 
+                                        <option value="选择省份">城市</option> 
+                                        <option value="广州">广州</option> 
+                                        <option value="北京">潮州</option>
+                                        <option value="茂名">茂名</option>
+                                        <option value="汕头">汕头</option> 
+                                        <option value="珠海">珠海</option>  
+                                    </select>
+                                    <select class="input select_3" name=""> 
+                                        <option value="选择省份">县区</option> 
+                                        <option value="广东">湘桥</option> 
+                                        <option value="北京">潮安</option> 
+                                        <option value="上海">饶平</option> 
+                                    </select>
+                                    <span class="title">目的地点：</span>
+                                </dd>
+                                <dd class="item">
+                                    <input class="input select_2" type="date">
+                                    <span class="dash">-</span>
+                                    <input class="input select_2" type="date">
+
+                                    <span class="title">出发时间：</span>
+                                </dd>
+                                <dd class="item">
+                                    <input class="input select_2" type="number" min="0" step="1">
+                                    <span class="dash">-</span>
+                                    <input class="input select_2" type="number" min="1" step="1">
+                                    <span class="title">计划人数：</span>
+                                </dd>
+                                <dd class="item">
+                                    <input class="input select_2" type="number" min="1" step="100">
+                                    <span class="dash">-</span>
+                                    <input class="input select_2" type="number" min="1" step="100">
+                                    <span class="title">每人预算：</span>
+                                </dd>
+                                <dd class="item">
+
+                                    <label class="u_checkbox" for="checkboxEconomy">
+                                        <div class="txt">经济型</div>
+                                        <input class="checkbox" type="checkbox" value="经济型" id="checkboxEconomy" name="putup" />
+                                        <div class="bg"></div>
+                                    </label>
+
+                                    <label class="u_checkbox" for="checkboxThree">
+                                        <div class="txt">三星级</div>
+                                        <input class="checkbox" type="checkbox" value="三星级" id="checkboxThree" name="putup" />
+                                        <div class="bg"></div>
+                                    </label>
+
+                                    <label class="u_checkbox" for="checkboxFour">
+                                        <div class="txt">四星级</div>
+                                        <input class="checkbox" type="checkbox" value="四星级" id="checkboxFour" name="putup" />
+                                        <div class="bg"></div>
+                                    </label>
+
+                                    <label class="u_checkbox" for="checkboxFive">
+                                        <div class="txt">五星级</div>
+                                        <input class="checkbox" type="checkbox" value="五星级" id="checkboxFive" name="putup" />
+                                        <div class="bg"></div>
+                                    </label>
+
+                                    <label class="u_checkbox" for="checkboxAssign">
+                                        <div class="txt">指定酒店</div>
+                                        <input class="checkbox" type="checkbox" value="指定酒店" id="checkboxAssign" name="putup" />
+                                        <div class="bg"></div>
+                                    </label>
+
+                                    <label class="u_checkbox" for="checkboxNo">
+                                        <div class="txt">免定安排</div>
+                                        <input class="checkbox" type="checkbox" value="免定安排" id="checkboxNo" name="putup" />
+                                        <div class="bg"></div>
+                                    </label>
 
 
-                                <span class="title">住宿要求：</span>
-                            </dd>
-                            <dd>
+                                    <span class="title">住宿要求：</span>
+                                </dd>
 
-  	
-                        </dd>
-                            <dd class="item">
-                               <label class="u_checkbox" for="checkboxAircraft">
-                                    <div class="txt">飞机</div>
-                                    <input class="checkbox" type="checkbox" value="飞机" id="checkboxAircraft" name="putup" />
-                                    <div class="bg"></div>
-                                </label>
+                                <dd class="item">
+                                   <label class="u_checkbox" for="checkboxAircraft">
+                                        <div class="txt">飞机</div>
+                                        <input class="checkbox" type="checkbox" value="飞机" id="checkboxAircraft" name="putup" />
+                                        <div class="bg"></div>
+                                    </label>
 
-                                <label class="u_checkbox" for="checkboxHighspeedrai">
-                                    <div class="txt">高铁</div>
-                                    <input class="checkbox" type="checkbox" value="高铁" id="checkboxHighspeedrai" name="traffic" />
-                                    <div class="bg"></div>
-                                </label>
+                                    <label class="u_checkbox" for="checkboxHighspeedrai">
+                                        <div class="txt">高铁</div>
+                                        <input class="checkbox" type="checkbox" value="高铁" id="checkboxHighspeedrai" name="traffic" />
+                                        <div class="bg"></div>
+                                    </label>
 
-                                <label class="u_checkbox" for="checkboxTrain">
-                                    <div class="txt">火车</div>
-                                    <input class="checkbox" type="checkbox" value="火车" id="checkboxTrain" name="traffic" />
-                                    <div class="bg"></div>
-                                </label>
+                                    <label class="u_checkbox" for="checkboxTrain">
+                                        <div class="txt">火车</div>
+                                        <input class="checkbox" type="checkbox" value="火车" id="checkboxTrain" name="traffic" />
+                                        <div class="bg"></div>
+                                    </label>
 
-                                <label class="u_checkbox" for="checkboxCar">
-                                    <div class="txt">汽车</div>
-                                    <input class="checkbox" type="checkbox" value="汽车" id="checkboxCar" name="traffic" />
-                                    <div class="bg"></div>
-                                </label>
+                                    <label class="u_checkbox" for="checkboxCar">
+                                        <div class="txt">汽车</div>
+                                        <input class="checkbox" type="checkbox" value="汽车" id="checkboxCar" name="traffic" />
+                                        <div class="bg"></div>
+                                    </label>
 
-                                <label class="u_checkbox" for="checkboxBicycle">
-                                    <div class="txt">自行车</div>
-                                    <input class="checkbox" type="checkbox" value="自行车" id="checkboxBicycle" name="traffic" />
-                                    <div class="bg"></div>
-                                </label>
+                                    <label class="u_checkbox" for="checkboxBicycle">
+                                        <div class="txt">自行车</div>
+                                        <input class="checkbox" type="checkbox" value="自行车" id="checkboxBicycle" name="traffic" />
+                                        <div class="bg"></div>
+                                    </label>
 
-                                <label class="u_checkbox" for="checkboxPedestrianism">
-                                    <div class="txt">徒步</div>
-                                    <input class="checkbox" type="checkbox" value="徒步" id="checkboxPedestrianism" name="traffic" />
-                                    <div class="bg"></div>
-                                </label>
-                                
-                                <label class="u_checkbox" for="checkboxSelfdrivingtravel">
-                                    <div class="txt">自驾游</div>
-                                    <input class="checkbox" type="checkbox" value="自驾游" id="checkboxSelfdrivingtravel" name="traffic" />
-                                    <div class="bg"></div>
-                                </label>
-                                
-                                <span class="title">交通情况：</span>
-                            </dd>
-                            <dd class="item">
-                                
-                                <textarea class="input" name="" id="" cols="30" rows="10"></textarea>
-                                <span class="title">其他需求：</span>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li class="list none">
-                        <dl class="m_message">
-                            <dd class="item">
-                                <span class="title">公司名称：</span>
-                                <input class="input" type="text">
-                            </dd>
-                            <dd class="item">
-                                <span class="title">联系人：</span>
-                                <input class="input" type="text">
-                            </dd>
-                            <dd class="item">
-                                <span class="title">手机号码：</span>
-                                <input class="input" type="tel">
-                            </dd>
-                            <dd class="item">
-                                <span class="title">固定电话：</span>
-                                <input class="input" type="tel">
-                            </dd>
-                            <dd class="item">
-                                <span class="title">电子邮箱：</span>
-                                <input class="input" type="email">
-                            </dd>
-                        </dl>
-                    </li>
-                    
-                    <li class="list step_btn">
+                                    <label class="u_checkbox" for="checkboxPedestrianism">
+                                        <div class="txt">徒步</div>
+                                        <input class="checkbox" type="checkbox" value="徒步" id="checkboxPedestrianism" name="traffic" />
+                                        <div class="bg"></div>
+                                    </label>
 
-                        
-                        <div class="verify none">
-                            <span class="title">验证码：</span>
-                            <input class="input" type="text">
-                            <img src="images/verification.jpg" alt="" class="img">
-                        </div>
-                        <div class="fr tr">
-                            <a href="" class="btn u_btn none" rel="prev">上一步</a>
-                            <a href="" class="btn u_btn" rel="next">下一步</a>
-                            <input class="btn u_btn none" type="submit">
-                        </div>
-                    </li>
-                </ul>
+                                    <label class="u_checkbox" for="checkboxSelfdrivingtravel">
+                                        <div class="txt">自驾游</div>
+                                        <input class="checkbox" type="checkbox" value="自驾游" id="checkboxSelfdrivingtravel" name="traffic" />
+                                        <div class="bg"></div>
+                                    </label>
+
+                                    <span class="title">交通情况：</span>
+                                </dd>
+                                <dd class="item">
+
+                                    <textarea class="input" name="" id="" cols="30" rows="10"></textarea>
+                                    <span class="title">其他需求：</span>
+                                </dd>
+                            </dl>
+
+                        </li>
+
+                        <li class="list">
+                            <dl class="m_message">
+                                <dd class="item">
+                                    <span class="title">公司名称：</span>
+                                    <input class="input" type="text">
+                                </dd>
+                                <dd class="item">
+                                    <span class="title">联系人：</span>
+                                    <input class="input" type="text">
+                                </dd>
+                                <dd class="item">
+                                    <span class="title">手机号码：</span>
+                                    <input class="input" type="tel">
+                                </dd>
+                                <dd class="item">
+                                    <span class="title">固定电话：</span>
+                                    <input class="input" type="tel">
+                                </dd>
+                                <dd class="item">
+                                    <span class="title">电子邮箱：</span>
+                                    <input class="input" type="email">
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                   
+                <div class="step_btn">
+
+                    <div class="verify none">
+                        <span class="title">验证码：</span>
+                        <input class="input" type="text">
+                        <img src="images/verification.jpg" alt="" class="img">
+                    </div>
+                    <div class="fr tr">
+                        <a href="" class="btn u_btn none prev_btn" rel="prev">上一步</a>
+                        <a href="" class="btn u_btn next_btn" rel="next">下一步</a>
+                        <input class="btn u_btn none submit_btn" type="submit" >
+                    </div>
+                </div>
+                
                 
                 <div>
                     
@@ -459,7 +461,7 @@
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-
+                customizationForm('customizationForm');
 			}
 			init();
 		</script>

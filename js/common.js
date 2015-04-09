@@ -72,9 +72,11 @@ function hideShowBtn(hideID,showID) {
     var eShow=$('#'+showID);
 
     // var btn=e.find('.btn_close');
-    console.log(eHide);
+    // console.log(eHide);
 
     eHide.click(function(event) {
+        $(this).addClass('none');
+        eShow.removeClass('none');
         // $(this).animate({
         //     height:0,
         //     marginTop:0,
@@ -100,10 +102,19 @@ function hideShowBtn(hideID,showID) {
     //     opacity: 1
     // });
 
-eShow.animate({
-    height:100+'%',
-    opacity: 1
-}, 400)
+// eShow.animate({
+//     height:100+'%',
+//     height:'100%',
+//     marginTop:0,
+//     marginBottom:0,
+//     opacity: 1
+// }, 400)
+// eShow.find('.item').animate({
+//     height:'100%',
+//     marginTop:30,
+//     marginBottom:30,
+//     opacity: 1
+// }, 400)
 
     // eShow.css("transform","translateY(0)");
 
@@ -114,7 +125,8 @@ eShow.animate({
 
         
         
-        // console.log('dsf'); 
+        // console.log('dsf');
+        return false 
     });
 
    
@@ -160,7 +172,7 @@ function promptClear(ID) {
     hint.click(function(event) {
         if (e.val()=='') {
             hint.addClass('none');
-        };
+        };event
         e.focus();
     });
 }
@@ -168,7 +180,45 @@ function promptClear(ID) {
 
 
 
+/**
+ * @name     :customizationForm
+ * @author   :Nice
+ * @dependent:定制表单
+ */
+function customizationForm(ID) {
+    var e=$('#'+ID);
+    var step=e.find('.step');
+    var stepList=step.find('.list');
 
+    var stepListL=stepList.length;
+
+    var info=e.find('.info')
+    var item=info.children('.list');
+
+    var itemL=item.length;
+
+    var stepBtn=e.find('.step_btn');
+    var prevBtn=stepBtn.find('.prev_btn');
+    var nextBtn=stepBtn.find('.next_btn');
+
+    var i=0;
+
+    //样式初始化
+    info.width(itemL*100+'%');
+    item.width(100/itemL+'%');
+
+    function stepBtnEvent(){
+
+    }
+
+    nextBtn.click();
+
+
+    console.log(stepListL);
+    console.log(itemL);
+    
+}
+/* @end **/
 
 
 
