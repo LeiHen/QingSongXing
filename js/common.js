@@ -197,25 +197,124 @@ function customizationForm(ID) {
 
     var itemL=item.length;
 
-    var stepBtn=e.find('.step_btn');
-    var prevBtn=stepBtn.find('.prev_btn');
-    var nextBtn=stepBtn.find('.next_btn');
+    var stepBtnWrap=e.find('.step_btn');
+    var stepBtn=e.find('.step_btn .btn');
+
+    var prevBtn=stepBtnWrap.find('.prev_btn');
+    var nextBtn=stepBtnWrap.find('.next_btn');
+    var submitBtn=stepBtnWrap.find('.submit_btn');
+    var verify=stepBtnWrap.find('.verify');
 
     var i=0;
+    // var itemL=4;
 
     //样式初始化
     info.width(itemL*100+'%');
     item.width(100/itemL+'%');
 
-    function stepBtnEvent(){
+    nextBtn.stop().animate({
+        left:0+'%'
+    }, 400)
 
+    function nextBtnEvent(){
+        // $(item[i]).addClass('none');
+        console.log(item[i])
+        i=i+1;
+        info.css({
+            left:-i*100+'%'
+        });
+        prevBtn.removeClass('none');
+
+        prevBtn.animate({
+            left:0+'%'
+        }, 400)
+
+        $(stepList[i]).addClass('active');
+
+        if (i>=itemL-1) {
+            i=i-1;
+
+            nextBtn.stop().animate({
+                left:200+'%'
+            }, 400)
+
+            setTimeout(function(){
+                nextBtn.addClass('none');
+
+                verify.stop().animate({
+                    opacity:1
+                }, 400)
+            },500)
+
+            setTimeout(function(){
+
+                prevBtn.stop().animate({
+                    left:0+'%'
+                }, 400)
+
+                submitBtn.removeClass('none');
+                submitBtn.stop().animate({
+                    left:0+'%'
+                }, 400)
+            },500)
+        };
+
+        
+        
     }
 
-    nextBtn.click();
+    function prevBtnEvent(){
+        info.css({
+            left:-i*100+'%'
+        });
 
+        console.log(i);
 
-    console.log(stepListL);
-    console.log(itemL);
+        $(stepList[i+1]).removeClass('active');
+        i=i-1;
+
+        if(i!=itemL){
+            verify.stop().animate({
+                opacity:0
+            }, 400)
+
+            submitBtn.stop().animate({
+                left:200+'%'
+            }, 400)
+
+            setTimeout(function(){
+                submitBtn.addClass('none');
+            },500)
+        };
+
+        if (i<=0) {
+            i=0;
+            prevBtn.stop().animate({
+                left:200+'%'
+            }, 400);
+            setTimeout(function(){
+                prevBtn.addClass('none');
+            },500)
+            
+        };
+
+        
+
+        if (i==0) {
+            setTimeout(function(){
+                nextBtn.removeClass('none');
+            },500)
+            
+            nextBtn.stop().animate({
+                left:200+'%'
+            }, 400)
+        }
+    }
+
+    var L=stepBtn.length;
+
+    nextBtn.click(nextBtnEvent);
+    prevBtn.click(prevBtnEvent);
     
 }
 /* @end **/

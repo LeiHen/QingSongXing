@@ -65,23 +65,69 @@
 }
 .customization .info{
 	width: 100%;
+	position: relative;
+	left: 0;
 }
 .customization .info .list{
 	float: left;
-	display: none;
+	/*display: none;*/
 }
-.customization .info .list:first-child{
+/*.customization .info .list:first-child{
 	display: block;
 }
+.customization .info .none{
+	display: none;
+}
+.customization .info .none:first-child{
+	display: none;
+}
+.customization .info .block{
+	display: block;
+}*/
+
+
 
 .customization .info .m_message .item{ overflow: hidden; }
 
-.customization  .step_btn{ margin:80px 0; overflow: hidden; vertical-align: top; }
-.customization  .step_btn .verify{ display: inline-block; overflow: hidden; }
+.customization  .step_btn{
+	margin:40px 0;
+	overflow: hidden;
+	vertical-align: top;
+}
+.customization  .step_btn .verify{
+	display: inline-block;
+	overflow: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	/*display: none;*/
+}
 .customization  .step_btn .verify .title{ height: 46px; font-size: 1.8em; line-height: 46px; display: block; float: left; }
-.customization  .step_btn .verify .input{ float: left; display: block; width: 80px; padding-left: 8px; padding-right: 8px; margin: 0 10px; letter-spacing:6px; text-transform:uppercase; }
+.customization  .step_btn .verify .input{
+	float: left;
+	display: block;
+	width: 80px;
+	padding-left: 8px;
+	padding-right: 8px;
+	line-height: 24px;
+	margin: 0 10px;
+	letter-spacing:5px;
+	text-transform:uppercase;
+}
 .customization  .step_btn .verify .img{ float: left; display: block; width: 80px; height: 46px; }
-.customization  .step_btn .btn{ vertical-align:top; display: inline-block; font-size: 2.6em; padding-right: 40px; padding-left:40px; margin: 0 0px 0 10px; }
+.customization  .step_btn .btn{
+	position: relative;
+	left:200%;
+	vertical-align:top;
+	display: inline-block;
+	font-size: 2.6em;
+	line-height: 1em;
+	padding-right: 40px;
+	padding-left:40px;
+	margin: 0 0px 0 10px;
+	border: none;
+}
+.customization  .step_btn .submit_btn{
+}
 .customization  .step_btn .none{ display: none; }
 
 
@@ -257,7 +303,8 @@
 .u_radio .bg:after,
 .m_photo .list .plr,
 .m_photo .list .plr .title,
-.m_list_txt .list .line{
+.m_list_txt .list .line,
+.customization .info{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
