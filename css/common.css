@@ -179,7 +179,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 
 /* 咨询评点 */
-.m_FAQ{ position: relative; display: inline-block; padding: 20px 20px 20px 50px; margin: 20px 0 0 0; border: 1px solid #e5e5e5; color: #1f2227; }
+.m_FAQ{ position: relative; display:block; padding: 20px 20px 20px 50px; margin: 20px 0 0 0; border: 1px solid #e5e5e5; color: #1f2227; }
 .m_FAQ .ico{position: absolute;left:20px; display:block; height: 20px; width: 20px;  color: #fff; text-align: center; line-height: 20px; font-size: 1em; font-weight: normal;   overflow: hidden; }
 .m_FAQ .Q_title{ margin: 0 0 10px 0; line-height: 20px; font-size: 1.4em; font-weight: bold; }
 .m_FAQ .Q_title .ico{ background: #f54200; }
@@ -411,8 +411,8 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 .safeguard ul li a:hover{ background: rgba(65, 132, 181, 0.82); }
 
 /* 常见问题 */
-.issue{ background: #333947; padding: 30px 0; }
-.issue dl{ display: inline-block;+display: inline;+zoom: 1; padding: 0 20px 0 1.5%; width: 16.5%; }
+.issue{ background: #333947; padding: 30px 0; vertical-align: top; }
+.issue dl{ display: inline-block;+display: inline;+zoom: 1; padding: 0 20px 0 1.5%; width: 16.5%; vertical-align: top;}
 .issue dl dt{ padding: 0 0 10px 0; color: #b1bfe5; font-size: 1.8em; }
 .issue dl dt a{color: #b1bfe5;}
 .issue dl dt a:hover{color: #fff;}

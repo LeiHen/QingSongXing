@@ -49,6 +49,10 @@
 .index_remark{
 
 }
+.index_remark .m_FAQ{
+	display: block;
+}
+
 
 
 /* 包团定制 */
