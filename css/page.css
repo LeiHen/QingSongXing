@@ -183,19 +183,26 @@
 /*.consult_remark .cr_itme .cr_list_wrap .m_FAQ:first-child{ margin: 0; }*/
 .consult_remark .cr_itme .from{ margin: 20px 0; }
 .consult_remark .cr_itme .m_message{
-	/*height: 0px;
-	opacity: 0;
-	filter: alpha(opacity=0);
-	overflow: hidden;*/
-	/*transform:translateY(-100%);*/
+
 }
 .consult_remark .cr_itme .m_message .item{
-	/*height: 0px;
-	margin-top: 0;
-	margin-bottom: 0;
-	opacity: 0;
-	filter: alpha(opacity=0);*/
+
 }
+.consult_remark .cr_itme .m_message .satisfaction li:hover{
+	/*color: #e5e5e5;*/
+}
+.consult_remark .cr_itme .m_message .satisfaction + .hint{
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+	position: absolute;
+	left: 320px;
+	line-height: 1.2em;
+	color: #f54200;
+}
+
+
+
 
 .consult_remark .cr_itme .btn_box{ text-align: center; }
 .consult_remark .cr_itme .btn_box .u_btn{ font-size: 3em; line-height: 1em; padding: 20px 60px; margin: 20px auto; }
@@ -308,7 +315,8 @@
 .m_photo .list .plr,
 .m_photo .list .plr .title,
 .m_list_txt .list .line,
-.customization .info{
+.customization .info,
+.consult_remark .cr_itme .m_message .satisfaction + .hint{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

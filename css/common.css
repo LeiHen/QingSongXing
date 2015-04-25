@@ -24,16 +24,7 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 .header .search{ position: relative; float: right; height: 40px; margin: 20px 0; overflow: hidden; }
 .header .search .txt{ display:block; float: left; padding: 0px 10px; border: 4px solid #5f9dcc; font-size: 20px; line-height:32px; color: #8b8a8a; outline: none; overflow: visible; }
-.header .search .prompt{
-	float: left;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 0px 14px;
-	font-size: 20px;
-	line-height:40px;
-	color: #8b8a8a;
-}
+.header .search .prompt{ float: left; position: absolute; top: 0; left: 0; padding: 0px 14px; font-size: 20px; line-height:40px; color: #8b8a8a; }
 .header .search .btn_search{ float: left; display: block; padding:0 20px; border: none; height: 40px; background-color: #5f9dcc; line-height: 40px; font-size: 1.8em; color: #fff; cursor:pointer; }
 .header .search:hover{ }
 .header .search:hover .txt{ /*border: 4px solid #3c3c3c; */ border: 4px solid #f54200; }
@@ -339,7 +330,8 @@ a:link,a:visited,a:hover,a:active{ text-decoration: none; }
 
 .m_message .item .grade{ overflow: hidden; }
 .m_message .item .grade li{ display: inline-block; +display: inline; +zoom: 1; height: 46px; font-size: 3.6em; line-height: 46px; cursor: pointer; color: #e5e5e5; }
-.m_message .item .grade li:hover{ color: #f54200; }
+.m_message .item .grade li:hover,
+.m_message .item .grade .hover{ color: #f54200; }
 
 .m_message .btn_sub{ font-size: 30px; line-height: 1.6em; width: 100%; }
 .m_message .shade{}

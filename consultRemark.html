@@ -257,13 +257,15 @@
                         <div class="item">
                             <span class="title">整体评分</span>
 <!--                            <input class="input" type="text">-->
-                            <ul class="grade satisfaction">
-                                <li class="ico icon_heart_outlined icon_heart"></li>
+                            <ul class="grade satisfaction" id="satisfaction">
+                                <li class="ico icon_heart_outlined"></li>
                                 <li class="ico icon_heart_outlined"></li>
                                 <li class="ico icon_heart_outlined"></li>
                                 <li class="ico icon_heart_outlined"></li>
                                 <li class="ico icon_heart_outlined"></li>
                             </ul>
+                            <span class="hint">0分</span>
+                            
                         </div>
                         <div class="item">
                             <span class="title">点评内容</span>
@@ -416,6 +418,9 @@
                 hideShowBtn("consultBtn","consultBox");
                 //点评隐藏显示
                 hideShowBtn("remarkBtn","remarkBox");
+                
+                //满意度
+                satisfaction("satisfaction");
 			}
 			init();
 		</script>

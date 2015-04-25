@@ -172,7 +172,7 @@ function promptClear(ID) {
     hint.click(function(event) {
         if (e.val()=='') {
             hint.addClass('none');
-        };event
+        };
         e.focus();
     });
 }
@@ -346,6 +346,57 @@ function addFavorite() {
 
 }
 /* @end **/
+
+/**
+* @name     :satisfaction
+* @author   :Nice
+* @version  :
+* @explain  :满意度评分
+*/
+function satisfaction(id){
+    var e=$("#"+id),
+        itme=e.children('.ico'),
+        hint=e.next('.hint'),
+        i=0;
+
+        itme.hover(function() {
+            var index=$(this).index();
+            itme.css({
+                color: '#e5e5e5'
+            });
+            itme.removeClass('icon_heart').removeClass('hover');
+            for (var i = 0; i <=index; i++) {
+                $(itme[i]).addClass('icon_heart');
+            };
+            hint.text(i+'分');
+        }),function(){
+
+            
+
+            for (var i = 0; i <=index; i++) {
+                $(itme[i]).addClass('icon_heart');
+            };
+            hint.text(i+'分');
+        };
+
+        itme.click(function(event) {
+            var index=$(this).index();
+
+            itme.css({
+                color: '#f54200'
+            });
+
+            itme.removeClass('icon_heart').removeClass('hover');
+            for (var i = 0; i <=index; i++) {
+                $(itme[i]).addClass('icon_heart').addClass('hover');
+            };
+            hint.text(i+'分');
+        });
+
+}
+/* @end **/
+
+
 
 /**
 * @name		:
